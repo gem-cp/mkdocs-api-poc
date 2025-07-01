@@ -36,6 +36,7 @@ markdown_extensions:
 # Plugins
 plugins:
   - search
+  - data-helper
   - macros
   # The multirepo plugin for pulling in external documentation
   - multirepo:
