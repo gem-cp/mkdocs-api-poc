@@ -4,6 +4,7 @@ mkdocs
 mkdocs-material
 mkdocs-macros-plugin
 mkdocs-multirepo-plugin
+PyYAML
 # Add the other plugins from your mkdocs.yml for completeness
 mkdocs-gen-files
 mkdocs-literate-nav

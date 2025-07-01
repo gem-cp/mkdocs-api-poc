@@ -1,11 +1,33 @@
 # main.py
+import os
+import yaml  # <-- Benötigt PyYAML
 import urllib.parse
 
-# This is the function that will be called from your markdown files
 def define_env(env):
     """
-    This is the hook for defining variables, macros and filters
+    This is the hook for defining variables, macros and filters.
     """
+
+    # --------------------------------------------------------------------------
+    # MANUELLES LADEN DER DATEN AUS DEM _data ORDNER
+    # Das mkdocs-macros-plugin macht dies nicht automatisch.
+    # Wir fügen die Logik hier hinzu.
+    # --------------------------------------------------------------------------
+    env.variables['data'] = {}
+    data_dir = '_data'
+    if os.path.exists(data_dir):
+        for filename in os.listdir(data_dir):
+            if filename.endswith(('.yml', '.yaml')):
+                file_path = os.path.join(data_dir, filename)
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    # Der Dateiname (ohne Endung) wird zum Schlüssel.
+                    # z.B. wird aus 'badges.yml' der Schlüssel 'badges'.
+                    key = os.path.splitext(filename)[0]
+                    env.variables['data'][key] = yaml.safe_load(f)
+    # --------------------------------------------------------------------------
+    # Ende des manuellen Ladens
+    # --------------------------------------------------------------------------
+
 
     @env.macro
     def badge(badge_id: str):
@@ -15,11 +37,9 @@ def define_env(env):
         
         Usage: {{ badge('release_notes') }}
         """
-        # The 'data' variable is automatically populated by the plugin
-        # with the content of the _data/*.yml files.
-        # The filename 'badges' becomes the key.
-        if 'badges' not in env.variables['data']:
-            return f"Error: _data/badges.yml not found."
+        # Wir machen die Prüfung sicherer mit .get(), falls 'data' oder 'badges' fehlt
+        if 'badges' not in env.variables.get('data', {}):
+            return "Error: _data/badges.yml not found or couldn't be loaded."
             
         badge_data = env.variables['data']['badges'].get(badge_id)
 
@@ -32,8 +52,8 @@ def define_env(env):
         color = badge_data.get('color', 'lightgrey')
         
         # URL-encode the parts of the badge
-        label_encoded = urllib.parse.quote(label.replace("-", "--"))
-        message_encoded = urllib.parse.quote(message.replace("-", "--"))
+        label_encoded = urllib.parse.quote(str(label).replace("-", "--"))
+        message_encoded = urllib.parse.quote(str(message).replace("-", "--"))
 
         # Base URL
         url = f"https://img.shields.io/badge/{label_encoded}-{message_encoded}-{color}"
