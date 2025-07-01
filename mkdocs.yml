@@ -36,38 +36,31 @@ markdown_extensions:
 # Plugins
 plugins:
   - search
-  - macros:
-      includes_dir: _includes
+  - macros
+
+# In mkdocs.yml
 
   # The multirepo plugin for pulling in external documentation
   - multirepo:
       repos:
-        # Import documentation from 'project-alpha'
-        - section: "VSDM2" # This is just a friendly name
-          url: https://github.com/gematik/spec-VSDM2
-          # Optional: specify a branch, tag, or commit
-          rev: main
-          # Define which files/dirs to import
-          # The paths are relative to the root of the OTHER repo.
-          paths:
-            - src: docs/          # Import the entire 'docs/api' folder
-              dest: spec-VSDM2/docs/
-            - src: images/         # Import the entire images folder
-              dest: spec-VSDM2/images/
-            - src: README.md       # Import the root README file
-              dest: spec-VSDM2/README.md
+        # Import documentation from 'VSDM2'
+        - section: "VSDM2"
+          import_url: https://github.com/gematik/spec-VSDM2
+          import_branch: main
+          imports:
+            # The format is: "source_path_in_repo -> destination_in_docs_folder"
+            - docs/* -> spec-VSDM2/docs
+            - images/* -> spec-VSDM2/images
+            - README.md -> spec-VSDM2/README.md
 
         # Import documentation from 'ZETA'
         - section: "ZETA"
-          url: https://github.com/gematik/zeta
-          rev: main
-          paths:
-            - src: docs/          # Import the entire 'docs/' folder
-              dest: zeta/docs/
-            - src: images/         # Import the entire images/ folder
-              dest: zeta/images/
-            - src: README.md       # Import the root README file
-              dest: zeta/README.md
+          import_url: https://github.com/gematik/zeta
+          import_branch: main
+          imports:
+            - docs/* -> zeta/docs
+            - images/* -> zeta/images
+            - README.md -> zeta/README.md
 
 # Navigation
 nav:
