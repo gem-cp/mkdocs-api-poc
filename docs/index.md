@@ -1,10 +1,6 @@
 # ZETA Dokumentation
 
-{::nomarkdown}
-{% include badge.html name="release_notes" %}
-{:/nomarkdown}
-
-![Release Notes](https://img.shields.io/badge/)
+{{ badge('release_notes') }}
 
 Diese Dokumentation beschreibt die Zero Trust Access (ZETA) Lösung der gematik GmbH. Sie richtet sich an Entwickler, Integratoren und Administratoren, die ZETA in ihre Systeme integrieren oder verwalten möchten.
 
