@@ -2307,13 +2307,13 @@ Der ZETA Client nutzt Endpunkte des ZETA Guard für die Client-Registrierung, Au
 <li><strong>Authentifizierung und Autorisierung:</strong> Der Client muss sich authentifizieren und die Integrität seiner Plattform nachweisen. Zusätzlich muss sich der Nutzer oder beim Primärsystem die Organisation authentifizieren, um ein Access Token für den Zugriff auf geschützte Ressourcen zu erhalten.</li>
 </ul>
 <p>Der Gesamtprozess beginnt damit, dass ein <strong>Nutzer</strong> auf einen Endpunkt eines Resource Servers zugreifen möchte. Dieser Zugriff wird über das Primärsystem vom <strong>ZETA Client</strong> im Auftrag des Nutzers ausgeführt; siehe folgende Abbildung.</p>
-<p><img alt="tpm-attestation-and-token-exchange-overview" src="/images/tpm-attestation-and-token-exchange/tpm-attestation-and-token-exchange-overview.svg" /></p>
+<p><img alt="tpm-attestation-and-token-exchange-overview" src="../../../images/tpm-attestation-and-token-exchange/tpm-attestation-and-token-exchange-overview.svg" /></p>
 <p style="font-size:0.9em; text-align:center;"><em>Abbildung 1: Ablauf TPM Attestation und Token Exchange Überblick</em></p>
 
 <hr />
 <h3 id="konfiguration-und-discovery">Konfiguration und Discovery</h3>
 <p>In dieser Phase ermittelt der ZETA Client die notwendigen Endpunkte und Konfigurationen von den ZETA Guard Komponenten (PEP http Proxy und PDP Authorization Server). Der Client fragt bekannte Endpunkte (<code>/.well-known/oauth-protected-resource</code> und <code>/.well-known/oauth-authorization-server</code>) ab, um die Konfiguration des Resource Servers und des Authorization Servers zu erhalten. Das folgende Bild zeigt den Ablauf.</p>
-<p><img alt="tpm-attestation-and-token-exchange-overview" src="/images/tpm-attestation-and-token-exchange/discovery-and-configuration.svg" /></p>
+<p><img alt="tpm-attestation-and-token-exchange-overview" src="../../../images/tpm-attestation-and-token-exchange/discovery-and-configuration.svg" /></p>
 <p style="font-size:0.9em; text-align:center;"><em>Abbildung 2: Ablauf Discovery and Configuration</em></p>
 
 <h3 id="client-registrierung">Client-Registrierung</h3>
@@ -2324,7 +2324,7 @@ Der ZETA Client nutzt Endpunkte des ZETA Guard für die Client-Registrierung, Au
 <li><strong>Aktivierung (Erster Token Exchange):</strong> Der Client wird aktiviert, indem er zum ersten Mal einen Token Exchange mit einer erfolgreichen <strong>Attestierung</strong> durchführt. Damit beweist er nicht nur den Besitz des privaten Schlüssels, sondern (bei der TPM-Attestierung) auch die Integrität der Plattform, auf der er läuft. Nach erfolgreicher Prüfung wird sein Status im ZETA Guard auf <code>active</code> gesetzt.</li>
 </ul>
 <p>Die Client Registrierung ist in der folgenden Abbildung dargestellt.</p>
-<p><img alt="Ablauf Client Registrierung" src="/images/tpm-attestation-and-token-exchange/dynamic-client-registration.svg" /></p>
+<p><img alt="Ablauf Client Registrierung" src="../../../images/tpm-attestation-and-token-exchange/dynamic-client-registration.svg" /></p>
 <p style="font-size:0.9em; text-align:center;"><em>Abbildung 3: Ablauf Client Registrierung</em></p>
 
 <p>Für die initiale Registrierung sendet der ZETA Client eine Anfrage an den Dynamic Client Registration (DCR) Endpoint. Diese Anfrage enthält alle notwendigen Metadaten, um den Client für die <code>private_key_jwt</code> Authentifizierungsmethode vorzubereiten:</p>
@@ -2347,7 +2347,7 @@ Der ZETA Client nutzt Endpunkte des ZETA Guard für die Client-Registrierung, Au
 </ol>
 <p>Diese Trennung schafft eine Balance zwischen höchster Sicherheit beim initialen Zugriff und Effizienz bei der Erneuerung bestehender Sitzungen.</p>
 <p>Die folgende Abbildung zeigt den Ablauf des Token-Austauschs mit Client Assertion JWT Authentifizierung und DPoP.</p>
-<p><img alt="tpm-attestation-and-token-exchange-overview" src="/images/tpm-attestation-and-token-exchange/token-exchange-with-client-assertion-jwt-auth.svg" /></p>
+<p><img alt="tpm-attestation-and-token-exchange-overview" src="../../../images/tpm-attestation-and-token-exchange/token-exchange-with-client-assertion-jwt-auth.svg" /></p>
 <p style="font-size:0.9em; text-align:center;"><em>Abbildung 4: Ablauf Authentifizierung und TPM-Attestation</em></p>
 
 <h5 id="pfad-a-token-austausch-mit-attestierung">Pfad A: Token-Austausch mit Attestierung</h5>
