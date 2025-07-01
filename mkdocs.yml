@@ -42,42 +42,42 @@ plugins:
 
   # The multirepo plugin for pulling in external documentation
   - multirepo:
-      repos:
-        # Import documentation from 'VSDM2'
-        - section: "VSDM2"
+      cleanup: true
+      keep_docs_dir: true
+      nav_repos:
+        # Import documentation from spec-VSDM2
+        - name: spec-VSDM2
           import_url: https://github.com/gematik/spec-VSDM2
-          import_branch: main
-          imports:
+          imports: [
             # The format is: "source_path_in_repo -> destination_in_docs_folder"
-            - docs/* -> spec-VSDM2/docs
-            - images/* -> spec-VSDM2/images
-            - README.md -> spec-VSDM2/README.md
-
-        # Import documentation from 'ZETA'
-        - section: "ZETA"
+            docs/*,
+            images/*,
+            README.md
+            ]
+        # Import documentation from ZETA
+        - name: "zeta"
           import_url: https://github.com/gematik/zeta
-          import_branch: main
-          imports:
-            - docs/* -> zeta/docs
-            - images/* -> zeta/images
-            - README.md -> zeta/README.md
-
+          imports: [
+            docs/*,
+            images/*,
+            index.md
+            ]
 # Navigation
 nav:
-  - Home: 'index.md' # local file
-  - 'VSDM2':
-    - 'VSDM2 Dokumentation': 'spec-VSDM2/README.md' # Imported file
-    - 'Anwendungsfälle': 'spec-VSDM2/docs/vsdm_anwendungsfaelle.md' # Imported file
-    - 'Anwendungsszenarien': 'spec-VSDM2/docs/vsdm_anwendungsszenarien.md' # Imported file
-    - 'Primärsystem Interaktionen': 'spec-VSDM2/docs/vsdm_psinteraktionen.md' # Imported file
-    - 'Abläufe': 'spec-VSDM2/docs/vsdm_ablauf_ps.md' # Imported file
-    - 'VSDM FHIR': 'spec-VSDM2/docs/vsdm_fhir_infos.md' # Imported file
-    - 'VSDM Informationsmodell': 'spec-VSDM2/docs/vsdm_informationsmodell.md' # Imported file
-    - 'VSDM Kontext PoPP und ZETA': 'spec-VSDM2/docs/vsdm_kontext_popp_zt.md' # Imported file
-    - 'VSDM Prüfziffer': 'spec-VSDM2/docs/vsdm_pruefziffer.md' # Imported file
-    - 'Status Codes': 'spec-VSDM2/docs/vsdm_statuscodes.md' # Imported file
-    - 'Error Codes': 'spec-VSDM2/docs/vsdm_errorcodes.md' # Imported file
-  - 'ZETA':
-    - 'ZETA Dokumentation': 'zeta/index.md' # Imported file
-    - 'ZETA API v1': 'zeta/docs/api/v1/index.md' # Imported file
-    - 'ZETA Guard': 'zeta/docs/zeta-guard/index.md' # Imported file
+  - Home: index.md # local file
+  - VSDM2:
+    - VSDM2 Dokumentation: spec-VSDM2/README.md # Imported file
+    - Anwendungsfälle: spec-VSDM2/docs/vsdm_anwendungsfaelle.md # Imported file
+    - Anwendungsszenarien: spec-VSDM2/docs/vsdm_anwendungsszenarien.md # Imported file
+    - Primärsystem Interaktionen: spec-VSDM2/docs/vsdm_psinteraktionen.md # Imported file
+    - Abläufe: spec-VSDM2/docs/vsdm_ablauf_ps.md # Imported file
+    - VSDM FHIR: spec-VSDM2/docs/vsdm_fhir_infos.md # Imported file
+    - VSDM Informationsmodell: spec-VSDM2/docs/vsdm_informationsmodell.md # Imported file
+    - VSDM Kontext PoPP und ZETA: spec-VSDM2/docs/vsdm_kontext_popp_zt.md # Imported file
+    - VSDM Prüfziffer: spec-VSDM2/docs/vsdm_pruefziffer.md # Imported file
+    - Status Codes: spec-VSDM2/docs/vsdm_statuscodes.md # Imported file
+    - Error Codes: spec-VSDM2/docs/vsdm_errorcodes.md # Imported file
+  - ZETA:
+    - ZETA Dokumentation: zeta/index.md # Imported file
+    - ZETA API v1: zeta/docs/api/v1/index.md # Imported file
+    - ZETA Guard: zeta/docs/zeta-guard/index.md # Imported file
