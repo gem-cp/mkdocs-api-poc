@@ -63,8 +63,8 @@ plugins:
 nav:
   - Home:
     - Einführung: index.md # local file
-    - localAPIv1: api/v1/index.md # local file
-    - Release-Notes: release-notes.md # local file
+    - local API v1: api/v1/index.md # local file
+    - Release Notes: release-notes.md # local file
   - VSDM2:
     - VSDM2 Dokumentation: spec-VSDM2/README.md # Imported file
     - Anwendungsfälle: spec-VSDM2/docs/vsdm_anwendungsfaelle.md # Imported file
