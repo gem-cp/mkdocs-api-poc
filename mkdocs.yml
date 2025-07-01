@@ -61,11 +61,8 @@ plugins:
             ]
 # Navigation
 nav:
-  - Home: 
-    - localZETA: index.md # local file
-    - local ZETA Dokumentation: docs/index.md # local file
-    - local ZETA API v1: docs/api/v1/index.md # local file
-    - local ZETA Guard: docs/zeta-guard/index.md # local file
+  - Home: index.md # local file
+  - localAPIv1: docs/api/v1/index.md # local file
   - VSDM2:
     - VSDM2 Dokumentation: spec-VSDM2/README.md # Imported file
     - Anwendungsfälle: spec-VSDM2/docs/vsdm_anwendungsfaelle.md # Imported file
