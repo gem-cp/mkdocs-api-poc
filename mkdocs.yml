@@ -1,0 +1,85 @@
+# mkdocs.yml
+
+# Project Information
+site_name: "API PoC and Integrated Docs"
+site_url: "https://gem-cp.github.io/mkdocs-api-poc/" # Change if you deploy elsewhere
+repo_url: "https://github.com/gem-cp/mkdocs-api-poc"
+repo_name: "gem-cp/mkdocs-api-poc"
+
+# Theme
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: assets/gematik-logo-small.svg # gematik logo
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
+
+# Plugins
+plugins:
+  - search
+  - macros:
+      includes_dir: _includes
+
+  # The multirepo plugin for pulling in external documentation
+  - multirepo:
+      repos:
+        # Import documentation from 'project-alpha'
+        - section: "VSDM2" # This is just a friendly name
+          import_url: https://github.com/gematik/spec-VSDM2
+          # Optional: specify a branch, tag, or commit
+          import_branch: main
+          # Define which files/dirs to import
+          # The paths are relative to the root of the OTHER repo.
+          imports:
+            - docs/          # Import the entire 'docs/api' folder
+            - images/         # Import the entire images folder
+            - README.md       # Import the root README file
+
+        # Import documentation from 'ZETA'
+        - section: "ZETA"
+          import_url: https://github.com/gematik/zeta
+          import_branch: main
+          imports:
+            - docs/          # Import the entire 'docs/' folder
+            - images/         # Import the entire images/ folder
+            - README.md       # Import the root README file
+# Navigation
+nav:
+  - Home: 'index.md'
+  - 'TI 2.0 Primärsystem Implementierungsleitfaden':
+    - 'Einleitung': 'index.md' # local file
+  - 'VSDM2':
+    - 'VSDM2 Dokumentation': 'spec-VSDM2/README.md' # Imported file
+    - 'Anwendungsfälle': 'spec-VSDM2/docs/vsdm_anwendungsfaelle.md' # Imported file
+    - 'Anwendungsszenarien': 'spec-VSDM2/docs/vsdm_anwendungsszenarien.md' # Imported file
+    - 'Primärsystem Interaktionen': 'spec-VSDM2/docs/vsdm_psinteraktionen.md' # Imported file
+    - 'Abläufe': 'spec-VSDM2/docs/vsdm_ablauf_ps.md' # Imported file
+    - 'VSDM FHIR': 'spec-VSDM2/docs/vsdm_fhir_infos.md' # Imported file
+    - 'VSDM Informationsmodell': 'spec-VSDM2/docs/vsdm_informationsmodell.md' # Imported file
+    - 'VSDM Kontext PoPP und ZETA': 'spec-VSDM2/docs/vsdm_kontext_popp_zt.md' # Imported file
+    - 'VSDM Prüfziffer': 'spec-VSDM2/docs/vsdm_pruefziffer.md' # Imported file
+    - 'Status Codes': 'spec-VSDM2/docs/vsdm_statuscodes.md' # Imported file
+    - 'Error Codes': 'spec-VSDM2/docs/vsdm_errorcodes.md' # Imported file
+  - 'ZETA':
+    - 'ZETA Dokumentation': 'zeta/index.md' # Imported file
+    - 'ZETA API v1': 'zeta/docs/api/v1/index.md' # Imported file
+    - 'ZETA Guard': 'zeta/docs/zeta-guard/index.md' # Imported file
