@@ -1,0 +1,23 @@
+# Posture schema for generic software clients
+type: object
+properties:
+  os:
+    type: string
+    description: Operating system name
+  os_version:
+    type: string
+    description: Operating system version
+  arch:
+    type: string
+    description: Hardware Architecture
+  public_key:
+    type: string
+    description: The public self signed signing key (PEM or base64 DER encoded).^
+  attestation_challenge:
+    type: string
+    description: The attestation challenge of the client instance, used to verify the public client instance key and the nonce from AS.
+required:
+  - os
+  - os_version
+  - arch
+  - public_key
