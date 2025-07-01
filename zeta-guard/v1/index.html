@@ -18,7 +18,7 @@
     
     
       
-        <title>Macro Rendering Error - API PoC and Integrated Docs</title>
+        <title>ZETA Guard v1 - API PoC and Integrated Docs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-rendering-error" class="md-skip">
+        <a href="#zeta-guard-v1" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Macro Rendering Error
+              ZETA Guard v1
             
           </span>
         </div>
@@ -794,23 +794,12 @@
   
 
 
-<h1 id="macro-rendering-error"><em>Macro Rendering Error</em></h1>
-<p><em>File</em>: <code>zeta-guard/v1/index.md</code></p>
-<p><em>KeyError</em>: 'data'</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Traceback (most recent call last):
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  File &quot;/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/mkdocs_macros/plugin.py&quot;, line 688, in render
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    return md_template.render(**page_variables)
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  File &quot;/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/jinja2/environment.py&quot;, line 1295, in render
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    self.environment.handle_exception()
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  File &quot;/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/jinja2/environment.py&quot;, line 942, in handle_exception
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    raise rewrite_traceback_stack(source=source)
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  File &quot;&lt;template&gt;&quot;, line 3, in top-level template code
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  File &quot;/home/runner/work/mkdocs-api-poc/mkdocs-api-poc/main.py&quot;, line 21, in badge
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    if &#39;badges&#39; not in env.variables[&#39;data&#39;]:
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                       ~~~~~~~~~~~~~^^^^^^^^
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>KeyError: &#39;data&#39;
-</code></pre></div>
+<h1 id="zeta-guard-v1">ZETA Guard v1</h1>
+<p><a href="/docs/zeta-guard/v1/index.html"><img alt="ZETA Guard: v1.1.0" src="https://img.shields.io/badge/ZETA%20Guard-v1.1.0-orange?style=plastic&amp;logo=github" /></a>
+<a href="https://gemspec.gematik.de/docs/gemSpec/gemSpec_ZETA/latest/"><img alt="gemSpec_ZETA: v1.1.0" src="https://img.shields.io/badge/gemSpec_ZETA-v1.1.0-blue?style=plastic&amp;logo=https://raw.githubusercontent.com/gematik/zeta/refs/heads/main/images/gematik-simple-logo.svg" /></a></p>
+<p>ZETA Guard ist die zentrale Komponente von ZETA, die als Policy Enforcement Point (PEP) und Policy Decision Point (PDP) fungiert. ZETA Guard ist verantwortlich für die Durchsetzung von Sicherheitsrichtlinien und die Entscheidung über Zugriffsanfragen auf geschützte Resource Server.
+ZETA Guard bietet eine RESTful API, die es ZETA Clients ermöglicht, sich zu registrieren, zu authentifizieren und Autorisierungsanfragen zu stellen. Die API ist so gestaltet, dass sie eine einfache Integration in bestehende Systeme ermöglicht und gleichzeitig die Sicherheitsanforderungen des Zero Trust Modells erfüllt.</p>
+<hr />
 
 
 
