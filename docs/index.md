@@ -1,5 +1,3 @@
-{% import 'macros.jinja' as macros %}
-
 # TI 2.0 Primärsystem Implementierungsleitfaden
 
 {{ badge('release_notes') }}
