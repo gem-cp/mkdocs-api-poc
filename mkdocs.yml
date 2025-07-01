@@ -48,6 +48,7 @@ plugins:
         # Import documentation from spec-VSDM2
         - name: spec-VSDM2
           import_url: https://github.com/gematik/spec-VSDM2
+          import_branch: main # Add the branch/rev you want to import from
           imports: [
             # The format is: "source_path_in_repo -> destination_in_docs_folder"
             docs/*,
@@ -57,6 +58,7 @@ plugins:
         # Import documentation from ZETA
         - name: "zeta"
           import_url: https://github.com/gematik/zeta
+          import_branch: main # Add the branch/rev you want to import from
           imports: [
             docs/*,
             images/*,
