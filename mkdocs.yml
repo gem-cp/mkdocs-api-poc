@@ -57,7 +57,6 @@ plugins:
         # Import documentation from ZETA
         - name: "zeta"
           import_url: https://github.com/gematik/zeta
-          branch: main
           imports: [
             docs/*,
             images/*,
