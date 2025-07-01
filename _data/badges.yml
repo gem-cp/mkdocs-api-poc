@@ -6,7 +6,7 @@ release_notes:
       color: "blue"
       style: "plastic"
       logo: "github"
-      link: "release-notes.md"
+      link: "docs/release-notes.md"
 
 zeta_api:
       label: "ZETA API"
@@ -14,7 +14,7 @@ zeta_api:
       color: "green"
       style: "plastic"
       logo: "github"
-      link: "api/v1/index.html"
+      link: "index.md"
 
 zeta_guard:
       label: "ZETA Guard"
