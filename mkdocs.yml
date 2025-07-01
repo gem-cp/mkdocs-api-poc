@@ -44,29 +44,34 @@ plugins:
       repos:
         # Import documentation from 'project-alpha'
         - section: "VSDM2" # This is just a friendly name
-          import_url: https://github.com/gematik/spec-VSDM2
+          url: https://github.com/gematik/spec-VSDM2
           # Optional: specify a branch, tag, or commit
-          import_branch: main
+          rev: main
           # Define which files/dirs to import
           # The paths are relative to the root of the OTHER repo.
-          imports:
-            - docs/          # Import the entire 'docs/api' folder
-            - images/         # Import the entire images folder
-            - README.md       # Import the root README file
+          paths:
+            - src: docs/          # Import the entire 'docs/api' folder
+              dest: spec-VSDM2/docs/
+            - src: images/         # Import the entire images folder
+              dest: spec-VSDM2/images/
+            - src: README.md       # Import the root README file
+              dest: spec-VSDM2/README.md
 
         # Import documentation from 'ZETA'
         - section: "ZETA"
-          import_url: https://github.com/gematik/zeta
-          import_branch: main
-          imports:
-            - docs/          # Import the entire 'docs/' folder
-            - images/         # Import the entire images/ folder
-            - README.md       # Import the root README file
+          url: https://github.com/gematik/zeta
+          rev: main
+          paths:
+            - src: docs/          # Import the entire 'docs/' folder
+              dest: zeta/docs/
+            - src: images/         # Import the entire images/ folder
+              dest: zeta/images/
+            - src: README.md       # Import the root README file
+              dest: zeta/README.md
+
 # Navigation
 nav:
-  - Home: 'index.md'
-  - 'TI 2.0 Primärsystem Implementierungsleitfaden':
-    - 'Einleitung': 'index.md' # local file
+  - Home: 'index.md' # local file
   - 'VSDM2':
     - 'VSDM2 Dokumentation': 'spec-VSDM2/README.md' # Imported file
     - 'Anwendungsfälle': 'spec-VSDM2/docs/vsdm_anwendungsfaelle.md' # Imported file
