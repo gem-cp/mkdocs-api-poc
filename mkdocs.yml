@@ -56,7 +56,7 @@ plugins:
             ]
         # Import documentation from ZETA
         - name: "zeta"
-          import_url: https://github.com/gematik/zeta/tree/main
+          import_url: https://github.com/gematik/zeta
           imports: [
             docs/*,
             images/*,
