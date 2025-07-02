@@ -49,7 +49,7 @@ plugins:
             # The format is: "source_path_in_repo -> destination_in_docs_folder"
             docs/*,
             images/*,
-            /README.md
+            README.md
             ]
         # Import documentation from ZETA
         - name: "zeta"
@@ -57,7 +57,7 @@ plugins:
           imports: [
             docs/*,
             images/*,
-            /index.md
+            index.md
             ]
 # Navigation
 nav:
