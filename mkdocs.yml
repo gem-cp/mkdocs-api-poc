@@ -55,11 +55,16 @@ plugins:
         # Import documentation from ZETA
         - name: "zeta"
           import_url: https://github.com/gematik/zeta?branch=main
-          imports: [
-            docs/*,
-            images/*,
-            index.md
-            ]
+          imports:
+            - index.md
+            - docs/**/*
+            - images/**/*
+
+          #imports: [
+          #  docs/*,
+          #  images/*,
+          #  index.md
+          #  ]
 # Navigation
 nav:
   - Home:
