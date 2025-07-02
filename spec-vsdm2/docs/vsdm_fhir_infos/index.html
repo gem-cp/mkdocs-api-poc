@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/docs/vsdm_fhir_infos/">
       
       
+        <link rel="prev" href="../vsdm_ablauf_ps/">
+      
+      
+        <link rel="next" href="../vsdm_informationsmodell/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>FHIR in VSDM 2.0 - API PoC and Integrated Docs</title>
+        <title>VSDM FHIR - API PoC and Integrated Docs</title>
       
     
     
@@ -103,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              FHIR in VSDM 2.0
+              VSDM FHIR
             
           </span>
         </div>
@@ -234,11 +238,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../spec-VSDM2/docs/vsdm_anwendungsfaelle.md" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../vsdm_anwendungsfaelle/" class="md-tabs__link">
           
   
   
@@ -437,26 +443,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -469,7 +480,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             VSDM2
@@ -483,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../spec-VSDM2/docs/vsdm_anwendungsfaelle.md" class="md-nav__link">
+      <a href="../vsdm_anwendungsfaelle/" class="md-nav__link">
         
   
   
@@ -506,7 +517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../spec-VSDM2/docs/vsdm_anwendungsszenarien.md" class="md-nav__link">
+      <a href="../vsdm_anwendungsszenarien/" class="md-nav__link">
         
   
   
@@ -529,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../spec-VSDM2/docs/vsdm_psinteraktionen.md" class="md-nav__link">
+      <a href="../vsdm_psinteraktionen/" class="md-nav__link">
         
   
   
@@ -552,7 +563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../spec-VSDM2/docs/vsdm_ablauf_ps.md" class="md-nav__link">
+      <a href="../vsdm_ablauf_ps/" class="md-nav__link">
         
   
   
@@ -572,10 +583,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../spec-VSDM2/docs/vsdm_fhir_infos.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    VSDM FHIR
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -586,6 +619,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fhir-releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      FHIR Releases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testportal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testportal??
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referenzierung-von-fhir-objekten-un-bundles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referenzierung von FHIR-Objekten un Bundles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-und-hinweise-zu-fhir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools und Hinweise zu FHIR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vsdm-fhir-beispiele" class="md-nav__link">
+    <span class="md-ellipsis">
+      VSDM FHIR-Beispiele
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konvertierung-von-fhir-xml-und-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konvertierung von FHIR XML und JSON
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rwferenzen-in-bundles-und-parameters-objekten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rwferenzen in Bundles und Parameters Objekten
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -598,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../spec-VSDM2/docs/vsdm_informationsmodell.md" class="md-nav__link">
+      <a href="../vsdm_informationsmodell/" class="md-nav__link">
         
   
   
@@ -621,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../spec-VSDM2/docs/vsdm_kontext_popp_zt.md" class="md-nav__link">
+      <a href="../vsdm_kontext_popp_zt/" class="md-nav__link">
         
   
   
@@ -644,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../spec-VSDM2/docs/vsdm_pruefziffer.md" class="md-nav__link">
+      <a href="../vsdm_pruefziffer/" class="md-nav__link">
         
   
   
@@ -667,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../spec-VSDM2/docs/vsdm_statuscodes.md" class="md-nav__link">
+      <a href="../vsdm_statuscodes/" class="md-nav__link">
         
   
   
@@ -690,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../spec-VSDM2/docs/vsdm_errorcodes.md" class="md-nav__link">
+      <a href="../vsdm_errorcodes/" class="md-nav__link">
         
   
   
