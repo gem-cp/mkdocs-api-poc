@@ -1,8 +1,5 @@
 # ZETA API v1
 
-{{ badge('zeta_api') }}
-{{ badge('zeta_specification') }}
-
 Die ZETA API ermöglicht es ZETA Clients, auf geschützte Ressourcen zuzugreifen und dabei Sicherheits- und Authentifizierungsmechanismen zu nutzen.
 Der ZETA Client nutzt Endpunkte des ZETA Guard für die Client-Registrierung, Authentifizierung und Autorisierung.
 
