@@ -46,12 +46,12 @@ plugins:
         # Import documentation from spec-VSDM2
         - name: spec-VSDM2
           import_url: https://github.com/gematik/spec-VSDM2?branch=main
-          imports: [
-            # The format is: "source_path_in_repo -> destination_in_docs_folder"
-            docs/*, # Imports all files from the docs directory
-            images/*, # Imports all files from the images directory
-            /README.md -> index.md # Imports root README.md and renames it to index.md in the site
-            ]
+          imports:
+            # Key-Value-Syntax für die Umbenennung.
+            - README.md: index.md
+            # rekursives Glob (**/*), um alle Unterordner und Dateien zu importieren.
+            - docs/**/*
+            - images/**/*
         # Import documentation from ZETA
         - name: "zeta"
           import_url: https://github.com/gematik/zeta?branch=main
