@@ -48,9 +48,9 @@ plugins:
           import_url: https://github.com/gematik/spec-VSDM2?branch=main
           imports: [
             # The format is: "source_path_in_repo -> destination_in_docs_folder"
-            docs/*,
-            images/*,
-            README.md
+            docs/*, # Imports all files from the docs directory
+            images/*, # Imports all files from the images directory
+            README.md -> index.md # Imports README.md and renames it to index.md in the site
             ]
         # Import documentation from ZETA
         - name: "zeta"
@@ -67,7 +67,7 @@ nav:
     - local API v1: api/v1/index.md # local file
     - Release Notes: release-notes.md # local file
   - VSDM2:
-    - VSDM2 Dokumentation: spec-VSDM2/ # Imported file
+    - VSDM2 Dokumentation: spec-VSDM2/index.md # Imported file
     - Anwendungsfälle: spec-VSDM2/docs/vsdm_anwendungsfaelle/ # Imported file
     - Anwendungsszenarien: spec-VSDM2/docs/vsdm_anwendungsszenarien/ # Imported file
     - Primärsystem Interaktionen: spec-VSDM2/docs/vsdm_psinteraktionen/ # Imported file
