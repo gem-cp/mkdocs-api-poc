@@ -29,19 +29,43 @@
          <lastmod>2025-07-02</lastmod>
     </url>
     <url>
-         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/</loc>
+         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/docs/vsdm_ablauf_ps/</loc>
          <lastmod>2025-07-02</lastmod>
     </url>
     <url>
-         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/CODE_OF_CONDUCT/</loc>
+         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/docs/vsdm_anwendungsfaelle/</loc>
          <lastmod>2025-07-02</lastmod>
     </url>
     <url>
-         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/CONTRIBUTING/</loc>
+         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/docs/vsdm_anwendungsszenarien/</loc>
          <lastmod>2025-07-02</lastmod>
     </url>
     <url>
-         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/SECURITY/</loc>
+         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/docs/vsdm_errorcodes/</loc>
+         <lastmod>2025-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/docs/vsdm_fhir_infos/</loc>
+         <lastmod>2025-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/docs/vsdm_informationsmodell/</loc>
+         <lastmod>2025-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/docs/vsdm_kontext_popp_zt/</loc>
+         <lastmod>2025-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/docs/vsdm_pruefziffer/</loc>
+         <lastmod>2025-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/docs/vsdm_psinteraktionen/</loc>
+         <lastmod>2025-07-02</lastmod>
+    </url>
+    <url>
+         <loc>https://gem-cp.github.io/mkdocs-api-poc/spec-vsdm2/docs/vsdm_statuscodes/</loc>
          <lastmod>2025-07-02</lastmod>
     </url>
     <url>
