@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://gem-cp.github.io/mkdocs-api-poc/zeta/docs/api/v1/">
       
       
-        <link rel="prev" href="../../../">
+        <link rel="prev" href="../../../../release-notes/">
       
       
         <link rel="next" href="../../zeta-guard/">
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-syntax-error" class="md-skip">
+        <a href="#zeta-api-v1" class="md-skip">
           Skip to content
         </a>
       
@@ -264,7 +264,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../" class="md-tabs__link">
+        <a href="../../../index.md" class="md-tabs__link">
           
   
   
@@ -797,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../" class="md-nav__link">
+      <a href="../../../index.md" class="md-nav__link">
         
   
   
@@ -826,8 +826,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    ZETA API v1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -840,6 +851,707 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zeta-api-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZETA API v1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voraussetzungen-fur-die-zeta-client-nutzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voraussetzungen für die ZETA Client Nutzung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ablauf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ablauf
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ablauf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konfiguration-und-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konfiguration und Discovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-registrierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client-Registrierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Client-Registrierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stationare-clients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stationäre Clients
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobile-clients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mobile Clients
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentifizierung-und-autorisierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentifizierung und Autorisierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentifizierung und Autorisierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stationare-clients_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stationäre Clients
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stationäre Clients">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pfad-a-token-austausch-mit-attestierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pfad A: Token-Austausch mit Attestierung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pfad-b-token-erneuerung-via-refresh-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pfad B: Token-Erneuerung via Refresh Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gemeinsame-nachfolgende-schritte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gemeinsame nachfolgende Schritte
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobile-clients_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mobile Clients
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpunkte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpunkte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpunkte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zeta-guard-api-endpunkte" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZETA Guard API Endpunkte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ZETA Guard API Endpunkte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oauth-protected-resource-well-known-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      OAuth Protected Resource Well-Known Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OAuth Protected Resource Well-Known Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization-server-well-known-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorization Server Well-Known Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authorization Server Well-Known Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nonce-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nonce Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nonce Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-client-registration-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Client Registration Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dynamic Client Registration Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen-fur-stationare-clients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen für stationäre Clients
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anfragen-fur-mobile-clients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen für mobile Clients
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resource Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resource Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konnektorti-gateway-endpunkte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konnektor/TI-Gateway Endpunkte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Konnektor/TI-Gateway Endpunkte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#readcardcertificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReadCardCertificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#externalauthenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      ExternalAuthenticate
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeta-attestation-service-endpunkte" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZETA Attestation Service Endpunkte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ZETA Attestation Service Endpunkte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dienstdefinition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dienstdefinition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpc-methoden" class="md-nav__link">
+    <span class="md-ellipsis">
+      RPC Methoden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RPC Methoden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getattestation" class="md-nav__link">
+    <span class="md-ellipsis">
+      GetAttestation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GetAttestation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-nachricht-getattestationrequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request-Nachricht: GetAttestationRequest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-nachricht-getattestationresponse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response-Nachricht: GetAttestationResponse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fehlerbehandlung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fehlerbehandlung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sicherheitsaspekte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sicherheitsaspekte
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verwaltung-von-schlusseln-und-session-daten-im-zeta-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwaltung von Schlüsseln und Session-Daten im ZETA Client
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Verwaltung von Schlüsseln und Session-Daten im ZETA Client">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einleitung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Einleitung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Einleitung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#globale-daten-client-ubergreifend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Globale Daten (Client-übergreifend)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daten-pro-zeta-guard-instanz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Daten pro ZETA Guard Instanz
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzeptionelles-speicherlayout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konzeptionelles Speicherlayout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sicherheitsempfehlungen-fur-die-schlusselspeicherung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sicherheitsempfehlungen für die Schlüsselspeicherung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versionierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Versionierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#versionierungsschema-majorminorpatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versionierungsschema: MAJOR.MINOR.PATCH
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Versionierungsschema: MAJOR.MINOR.PATCH">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementierung-der-versionierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementierung der Versionierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementierung der Versionierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-url-pfad-fur-die-major-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. URL-Pfad für die MAJOR-Version
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-discovery-dokument-als-source-of-truth" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Discovery-Dokument als "Source of Truth"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-http-header-zur-laufzeit-identifikation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. HTTP-Header zur Laufzeit-Identifikation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-verhalten-und-kompatibilitatsregeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client-Verhalten und Kompatibilitätsregeln
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deprecation-policy-auerbetriebnahme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deprecation Policy (Außerbetriebnahme)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-und-lastannahmen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance- und Lastannahmen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rate-limits-und-einschrankungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rate Limits und Einschränkungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-und-kontaktinformationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support und Kontaktinformationen
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -893,8 +1605,698 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zeta-api-v1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZETA API v1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voraussetzungen-fur-die-zeta-client-nutzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voraussetzungen für die ZETA Client Nutzung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ablauf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ablauf
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ablauf">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konfiguration-und-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konfiguration und Discovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-registrierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client-Registrierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Client-Registrierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stationare-clients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stationäre Clients
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobile-clients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mobile Clients
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentifizierung-und-autorisierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentifizierung und Autorisierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentifizierung und Autorisierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stationare-clients_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stationäre Clients
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stationäre Clients">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pfad-a-token-austausch-mit-attestierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pfad A: Token-Austausch mit Attestierung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pfad-b-token-erneuerung-via-refresh-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pfad B: Token-Erneuerung via Refresh Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gemeinsame-nachfolgende-schritte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gemeinsame nachfolgende Schritte
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobile-clients_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mobile Clients
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpunkte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpunkte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpunkte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zeta-guard-api-endpunkte" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZETA Guard API Endpunkte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ZETA Guard API Endpunkte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oauth-protected-resource-well-known-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      OAuth Protected Resource Well-Known Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OAuth Protected Resource Well-Known Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization-server-well-known-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorization Server Well-Known Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authorization Server Well-Known Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nonce-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nonce Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nonce Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-client-registration-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Client Registration Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dynamic Client Registration Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen-fur-stationare-clients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen für stationäre Clients
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anfragen-fur-mobile-clients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen für mobile Clients
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resource Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resource Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anfragen_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anfragen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antworten_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antworten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konnektorti-gateway-endpunkte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konnektor/TI-Gateway Endpunkte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Konnektor/TI-Gateway Endpunkte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#readcardcertificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReadCardCertificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#externalauthenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      ExternalAuthenticate
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeta-attestation-service-endpunkte" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZETA Attestation Service Endpunkte
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ZETA Attestation Service Endpunkte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dienstdefinition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dienstdefinition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpc-methoden" class="md-nav__link">
+    <span class="md-ellipsis">
+      RPC Methoden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RPC Methoden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getattestation" class="md-nav__link">
+    <span class="md-ellipsis">
+      GetAttestation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GetAttestation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-nachricht-getattestationrequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request-Nachricht: GetAttestationRequest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-nachricht-getattestationresponse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response-Nachricht: GetAttestationResponse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fehlerbehandlung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fehlerbehandlung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sicherheitsaspekte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sicherheitsaspekte
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verwaltung-von-schlusseln-und-session-daten-im-zeta-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verwaltung von Schlüsseln und Session-Daten im ZETA Client
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Verwaltung von Schlüsseln und Session-Daten im ZETA Client">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einleitung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Einleitung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Einleitung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#globale-daten-client-ubergreifend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Globale Daten (Client-übergreifend)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daten-pro-zeta-guard-instanz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Daten pro ZETA Guard Instanz
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzeptionelles-speicherlayout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konzeptionelles Speicherlayout
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sicherheitsempfehlungen-fur-die-schlusselspeicherung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sicherheitsempfehlungen für die Schlüsselspeicherung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versionierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Versionierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#versionierungsschema-majorminorpatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versionierungsschema: MAJOR.MINOR.PATCH
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Versionierungsschema: MAJOR.MINOR.PATCH">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementierung-der-versionierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementierung der Versionierung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementierung der Versionierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-url-pfad-fur-die-major-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. URL-Pfad für die MAJOR-Version
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-discovery-dokument-als-source-of-truth" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Discovery-Dokument als "Source of Truth"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-http-header-zur-laufzeit-identifikation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. HTTP-Header zur Laufzeit-Identifikation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-verhalten-und-kompatibilitatsregeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client-Verhalten und Kompatibilitätsregeln
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deprecation-policy-auerbetriebnahme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deprecation Policy (Außerbetriebnahme)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-und-lastannahmen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance- und Lastannahmen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rate-limits-und-einschrankungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rate Limits und Einschränkungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-und-kontaktinformationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support und Kontaktinformationen
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -913,11 +2315,1230 @@
   
 
 
-<h1 id="macro-syntax-error"><em>Macro Syntax Error</em></h1>
-<p><em>File</em>: <code>zeta/docs/api/v1/index.md</code></p>
-<p><em>Line 7 in Markdown file:</em> <strong>expected token 'end of statement block', got 'name'</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{% include badge.html name=&quot;zeta_api&quot; %}
-</code></pre></div></p>
+  <h1>ZETA API v1</h1>
+
+<ul>
+<li>TOC
+{:toc}</li>
+</ul>
+<h2 id="zeta-api-v1">ZETA API v1</h2>
+<p>Die ZETA API ermöglicht es ZETA Clients, auf geschützte Ressourcen zuzugreifen und dabei Sicherheits- und Authentifizierungsmechanismen zu nutzen.
+Der ZETA Client nutzt Endpunkte des ZETA Guard für die Client-Registrierung, Authentifizierung und Autorisierung.</p>
+<p>Stationäre Clients verwenden bei der Authentifizierung Endpunkte des Konnektors/TI-Gateways und des ZETA Attestation Service.</p>
+<p>Mobile Clients verwenden Endpunkte der betriebssystem-spezifischen Attestierung. Die Authentifizierung erfolgt mit OpenID Connect (OIDC) und der ZETA Guard API.</p>
+<p>Die ZETA API ist so konzipiert, dass sie eine sichere und flexible Interaktion zwischen ZETA Clients und geschützten Ressourcen ermöglicht. ZETA basiert auf den Standards des OAuth 2.0 Frameworks und erweitert es um spezifische Anforderungen der gematik.</p>
+<hr />
+<h2 id="voraussetzungen-fur-die-zeta-client-nutzung">Voraussetzungen für die ZETA Client Nutzung</h2>
+<p>Folgende Voraussetzungen müssen für die Nutzung des ZETA Clients erfüllt sein:</p>
+<ul>
+<li>Der <strong>FQDN des Resource Servers</strong> wird vom ZETA Client benötigt, um die ZETA Guard API zu erreichen.</li>
+<li>Die <a href="https://download.tsl.ti-dienste.de/ECC/ROOT-CA/roots.json">roots.json</a> Datei wird vom ZETA Client benötigt, um die Trust Chain zu validieren. Diese Datei muss wöchentlich aktualisiert werden.</li>
+</ul>
+<p>Zusätzlich gibt es anwendungsspezifische Voraussetzungen, die für die Nutzung der ZETA Guard API erforderlich sind.</p>
+<ul>
+<li><strong>VSDM2:</strong> Für VSDM2 Requests wird ein PoPP (Proof of Patient Presence) Token benötigt. Das PoPP Token muss im <a href="https://gemspec.gematik.de/docs/gemSpec/gemSpec_ZETA/latest/#A_25669">Header PoPP</a> an den ZETA Client übergeben werden.</li>
+</ul>
+<h2 id="ablauf">Ablauf</h2>
+<p>Abhängig vom Zustand des ZETA Clients müssen verschiedene Teilabläufe ausgeführt werden, oder können übersprungen werden. Die ZETA API besteht aus mehreren Endpunkten, die verschiedene Funktionen bereitstellen. Diese Endpunkte sind in verschiedene Unter-Abläufe aufgeteilt:</p>
+<ul>
+<li><strong>Konfiguration und Discovery:</strong> Der ZETA Client muss die Konfiguration des ZETA Guards ermitteln, um die richtigen Endpunkte zu erreichen.</li>
+<li><strong>Client-Registrierung:</strong> Jeder ZETA Client muss sich einmalig beim ZETA Guard registrieren, um eine <code>client_id</code> zu erhalten und seinen öffentlichen Schlüssel zu hinterlegen.</li>
+<li><strong>Authentifizierung und Autorisierung:</strong> Der Client muss sich authentifizieren und die Integrität seiner Plattform nachweisen. Zusätzlich muss sich der Nutzer oder beim Primärsystem die Organisation authentifizieren, um ein Access Token für den Zugriff auf geschützte Ressourcen zu erhalten.</li>
+</ul>
+<p>Der Gesamtprozess beginnt damit, dass ein <strong>Nutzer</strong> auf einen Endpunkt eines Resource Servers zugreifen möchte. Dieser Zugriff wird über das Primärsystem vom <strong>ZETA Client</strong> im Auftrag des Nutzers ausgeführt; siehe folgende Abbildung.</p>
+<p>
+<figure><img src="../../../images/tpm-attestation-and-token-exchange/tpm-attestation-and-token-exchange-overview.svg" /><figcaption>Abbildung 1: Ablauf TPM Attestation und Token Exchange Überblick</figcaption>
+</figure>
+</p>
+<hr />
+<h3 id="konfiguration-und-discovery">Konfiguration und Discovery</h3>
+<p>In dieser Phase ermittelt der ZETA Client die notwendigen Endpunkte und Konfigurationen von den ZETA Guard Komponenten (PEP http Proxy und PDP Authorization Server). Der Client fragt bekannte Endpunkte (<code>/.well-known/oauth-protected-resource</code> und <code>/.well-known/oauth-authorization-server</code>) ab, um die Konfiguration des Resource Servers und des Authorization Servers zu erhalten. Das folgende Bild zeigt den Ablauf.</p>
+<p>
+<figure><img src="../../../images/tpm-attestation-and-token-exchange/discovery-and-configuration.svg" /><figcaption>Abbildung 2: Ablauf Discovery and Configuration</figcaption>
+</figure>
+</p>
+<h3 id="client-registrierung">Client-Registrierung</h3>
+<h4 id="stationare-clients">Stationäre Clients</h4>
+<p>Jeder ZETA Client muss sich am ZETA Guard registrieren, über den er auf geschützte Ressourcen zugreifen möchte. Dieser Prozess findet <strong>einmalig pro ZETA Guard-Instanz</strong> statt. Der gesamte Prozess ist zweistufig, um die administrative Einrichtung von der technischen Inbetriebnahme zu trennen:</p>
+<ul>
+<li><strong>Initiale Registrierung:</strong> Der Client erzeugt ein langlebiges kryptographisches Schlüsselpaar (<strong>Client Instance Key</strong>), sendet den öffentlichen Teil an den Authorization Server und erhält im Gegenzug eine <code>client_id</code>. Der Client ist danach im System bekannt, aber sein Status ist <code>pending_attestation</code>, d.h. er ist noch nicht für den Zugriff auf Ressourcen freigeschaltet.</li>
+<li><strong>Aktivierung (Erster Token Exchange):</strong> Der Client wird aktiviert, indem er zum ersten Mal einen Token Exchange mit einer erfolgreichen <strong>Attestierung</strong> durchführt. Damit beweist er nicht nur den Besitz des privaten Schlüssels, sondern (bei der TPM-Attestierung) auch die Integrität der Plattform, auf der er läuft. Nach erfolgreicher Prüfung wird sein Status im ZETA Guard auf <code>active</code> gesetzt.</li>
+</ul>
+<p>Die Client Registrierung ist in der folgenden Abbildung dargestellt.</p>
+<p>
+<figure><img src="../../../images/tpm-attestation-and-token-exchange/dynamic-client-registration.svg" /><figcaption>Abbildung 3: Ablauf Client Registrierung</figcaption>
+</figure>
+</p>
+<p>Für die initiale Registrierung sendet der ZETA Client eine Anfrage an den Dynamic Client Registration (DCR) Endpoint. Diese Anfrage enthält alle notwendigen Metadaten, um den Client für die <code>private_key_jwt</code> Authentifizierungsmethode vorzubereiten:</p>
+<ul>
+<li><code>client_name</code>: Ein für Menschen lesbarer Name für den Client.</li>
+<li><code>token_endpoint_auth_method</code>: Die geplante Authentifizierungsmethode, hier <code>private_key_jwt</code>.</li>
+<li><code>grant_types</code>: Die erlaubten Grant Types (z.B. <code>urn:ietf:params:oauth:grant-type:token-exchange</code>, <code>refresh_token</code>).</li>
+<li><code>jwks</code>: Ein JSON Web Key Set, das den <strong>öffentlichen Client Instance Key</strong> enthält. Dieser Schlüssel wird vom Authorization Server verwendet, um die Signatur der Client Assertions zu überprüfen.</li>
+</ul>
+<hr />
+<h4 id="mobile-clients">Mobile Clients</h4>
+<p><em>Hinweis:</em> Der Prozess für Mobile Clients wird in zukünftigen Versionen der API detaillierter beschrieben, sobald die Entwicklung von ZETA Stufe 2 abgeschlossen ist.</p>
+<h3 id="authentifizierung-und-autorisierung">Authentifizierung und Autorisierung</h3>
+<p>Nach erfolgreicher Registrierung besitzt der ZETA Client eine <code>client_id</code> und ein zugehöriges Schlüsselpaar. Um auf einen Fachdienst zugreifen zu können, benötigt der Client ein Access Token vom Authorization Server (AS). Stationäre ZETA Clients verwenden dafür den Token Exchange Flow, während mobile ZETA Clients den Authorization Code Flow mit OpenID Connect nutzen.</p>
+<h4 id="stationare-clients_1">Stationäre Clients</h4>
+<p>Die Authentifizierung und Autorisierung für stationäre Clients unterscheidet zwei Hauptfälle:</p>
+<ol>
+<li><strong>Token-Austausch mit Attestierung:</strong> Hier wird die Identität der Institution (mittels <code>subject_token</code> von der SM(C)-B) nachgewiesen und die Integrität des Clients durch eine Attestierung überprüft. Dieser aufwändigere Prozess wird zu Beginn einer neuen Session (oder zur Re-Attestierung) durchgeführt, um sicherzustellen, dass der ZETA Client und das Primärsystem vertrauenswürdig sind.</li>
+<li><strong>Token-Erneuerung (Refresh Token):</strong> Hier wird ein vorhandenes Refresh Token genutzt, um ein neues Access Token zu erhalten. Dieser Prozess ist performanter und verzichtet auf eine erneute Attestierung.</li>
+</ol>
+<p>Diese Trennung schafft eine Balance zwischen höchster Sicherheit beim initialen Zugriff und Effizienz bei der Erneuerung bestehender Sitzungen.</p>
+<p>Die folgende Abbildung zeigt den Ablauf des Token-Austauschs mit Client Assertion JWT Authentifizierung und DPoP.</p>
+<p>
+<figure><img src="../../../images/tpm-attestation-and-token-exchange/token-exchange-with-client-assertion-jwt-auth.svg" /><figcaption>Abbildung 4: Ablauf Authentifizierung und TPM-Attestation</figcaption>
+</figure>
+</p>
+<h5 id="pfad-a-token-austausch-mit-attestierung">Pfad A: Token-Austausch mit Attestierung</h5>
+<p>Dieser Pfad wird beschritten, wenn der Client keine bestehende Session (d.h. kein gültiges Refresh Token) hat.</p>
+<ol>
+<li>
+<p><strong>Vorbereitung:</strong></p>
+<ul>
+<li>Der Client fordert eine frische, einmalig gültige <code>nonce</code> vom Authorization Server an (<code>GET /nonce</code>).</li>
+<li>Der Client erzeugt ein temporäres, nur für diese Session gültiges DPoP-Schlüsselpaar.</li>
+</ul>
+</li>
+<li>
+<p><strong>Integritätsprüfung und kryptografische Bindung:</strong></p>
+<ul>
+<li>Um zu beweisen, dass die Attestierung für genau diesen Client und diese Transaktion erstellt wurde, erzeugt der Client eine <code>attestation_challenge</code>. Diese bindet den Zustand des TPMs an den <strong>öffentlichen Client Instance Key</strong> und die <code>nonce</code> des AS: <code>attestation_challenge = HASH( HASH(Client_Instance_Public_Key_JWK) + nonce )</code>.</li>
+<li>Der Client fordert beim ZETA Attestation Service eine TPM Quote an, die diese <code>attestation_challenge</code> als <code>qualifyingData</code> enthält. Das TPM signiert somit eine Aussage, die mit der Identität des Clients verbunden ist.</li>
+</ul>
+</li>
+<li>
+<p><strong>Erstellen des Client Statement:</strong> Die Attestierungsartefakte (TPM Quote, Event Log, Zertifikatskette) werden in eine <code>client_statement</code>-Struktur gepackt. Im Falle des Fallbacks (Software-Attestierung) enthält diese Struktur andere, softwarebasierte Evidenz.</p>
+</li>
+<li>
+<p><strong>Erstellen der Client Assertion (mit Attestierung):</strong> Für die Authentifizierung am Token-Endpoint erstellt der Client eine <strong>Client Assertion</strong>. Dieses JWT, mit dem <strong>privaten Client Instance Key</strong> signiert, dient als "Umschlag":</p>
+<ul>
+<li>Es authentifiziert den Client gegenüber dem AS (<code>iss</code> und <code>sub</code> sind die <code>client_id</code>).</li>
+<li>Es enthält die <code>client_statement</code>-Struktur als Beweis für die Geräteintegrität, verpackt in einem spezifischen Claim (<code>urn:gematik:params:oauth:client-attestation:tpm2</code> oder <code>...:software</code>).</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Client Assertion für initialen Token-Austausch (Beispiel TPM)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;iss&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;client_id&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;sub&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;client_id&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;aud&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;AS_Token_Endpoint_URL&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;exp&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">...</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;jti&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="c1">// Kapselung des Attestierungsnachweises</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">&quot;urn:gematik:params:oauth:client-attestation:tpm2&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">     </span><span class="nt">&quot;attestation_data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;Base64(client_statement)&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">     </span><span class="nt">&quot;client_statement_format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;client-statement&quot;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">   </span><span class="p">}</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>Authentisierung der Institution (SM(C)-B Token):</strong> Parallel dazu erstellt der Client das <code>subject_token</code>. Dies ist ein vom ZETA Client erzeugtes JWT, dessen Hash vom Konnektor mittels der SM(C)-B signiert wird und die Identität der Institution (z.B. Praxis) belegt. Die Audience (<code>aud</code>) dieses Tokens ist der Ziel-Fachdienst (Resource Server).</p>
+</li>
+<li>
+<p><strong>Token Request:</strong> Der Client sendet eine <code>POST</code>-Anfrage an den <code>/token</code>-Endpoint, die alle Teile kombiniert: <code>grant_type=token-exchange</code>, das <code>subject_token</code>, die <code>client_assertion</code> (mit der eingebetteten Attestierung) und den DPoP-Proof.</p>
+</li>
+<li>
+<p><strong>Validierung durch den AS:</strong> Der AS führt eine umfassende Prüfung durch: Validierung der Client Assertion (Signatur gegen den bei der DCR hinterlegten Public Key), des DPoP-Proofs, des Subject Tokens und insbesondere der <strong>eingebetteten Attestierung</strong> (Prüfung der Quote, der <code>attestation_challenge</code> und der PCR-Werte gegen die Sicherheits-Policy).</p>
+</li>
+</ol>
+<h5 id="pfad-b-token-erneuerung-via-refresh-token">Pfad B: Token-Erneuerung via Refresh Token</h5>
+<p>Dieser effiziente Pfad wird genutzt, wenn ein gültiges Refresh Token vorhanden ist.</p>
+<ol>
+<li>
+<p><strong>Erstellen der Client Assertion (ohne Attestierung):</strong> Der Client erstellt eine einfache <code>client_assertion</code>. Sie beweist durch ihre Signatur mit dem Client Instance Key die Identität des Clients. Diese Assertion enthält keine Attestierungsdaten.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Client Assertion für Refresh-Token-Nutzung</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">&quot;iss&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;client_id&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">&quot;sub&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;client_id&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nt">&quot;aud&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;AS_Token_Endpoint_URL&gt;&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nt">&quot;exp&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">...</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;jti&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">}</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>Token Request:</strong> Der Client sendet eine <code>POST</code>-Anfrage an den <code>/token</code>-Endpoint mit <code>grant_type=refresh_token</code>, dem Refresh Token und der einfachen <code>client_assertion</code>.</p>
+</li>
+<li>
+<p><strong>Validierung durch den AS:</strong> Der AS validiert das Refresh Token, die Signatur der Client Assertion und den DPoP-Proof. Die Prüfung einer TPM-Attestierung entfällt. Bei Erfolg wird das alte Refresh Token invalidiert (Rotation).</p>
+</li>
+</ol>
+<hr />
+<h5 id="gemeinsame-nachfolgende-schritte">Gemeinsame nachfolgende Schritte</h5>
+<p>Nach erfolgreicher Validierung in einem der beiden Pfade fragt der AS bei der Policy Engine (PE) an, ob der Zugriff gewährt werden soll. Ist die Entscheidung positiv, stellt der AS ein neues Access Token (gebunden an den DPoP-Schlüssel) und ein neues Refresh Token aus.</p>
+<hr />
+<h4 id="mobile-clients_1">Mobile Clients</h4>
+<p>Die Authentifizierung für mobile Clients erfolgt mit OpenID Connect und OAuth2 Authorization Code Flow.
+Die Beschreibung wird ergänzt, wenn die Entwicklung von ZETA Stufe 2 abgeschlossen ist.</p>
+<h2 id="endpunkte">Endpunkte</h2>
+<p>Die ZETA API besteht aus mehreren Endpunkten, die verschiedene Funktionen bereitstellen. Diese Endpunkte sind in verschiedene Kategorien unterteilt:</p>
+<ul>
+<li><strong>ZETA Guard API Endpunkte:</strong> Diese Endpunkte ermöglichen die Interaktion mit dem ZETA Guard, einschließlich der Registrierung von Clients, der Authentifizierung und der Autorisierung.</li>
+<li><strong>Konnektor/TI-Gateway Endpunkte:</strong> Diese Endpunkte ermöglichen die Interaktion mit dem Konnektor/TI-Gateway, um Karteninformationen zu lesen und Authentifizierungsanfragen zu stellen.</li>
+<li><strong>ZETA Attestation Service Endpunkte:</strong> Diese Endpunkte ermöglichen die Interaktion mit dem ZETA Attestation Service, um TPM-Attestierungen durchzuführen.</li>
+</ul>
+<h3 id="zeta-guard-api-endpunkte">ZETA Guard API Endpunkte</h3>
+<p>Die ZETA Guard API Endpunkte sind für die Interaktion mit dem ZETA Guard zuständig. Sie ermöglichen die Registrierung von Clients, die Authentifizierung und Autorisierung sowie den Zugriff auf geschützte Ressourcen.
+Die ZETA Guard API Endpunkte sind über HTTPS erreichbar und erfordern eine gültige TLS-Verbindung. Der ZETA Client muss die folgenden Sicherheitsanforderungen erfüllen:</p>
+<ul>
+<li>ZETA Clients müssen TLS 1.3 oder höher unterstützen.</li>
+<li>Es müssen die TLS Anforderungen aus <a href="https://gemspec.gematik.de/docs/gemSpec/gemSpec_Krypt/latest/#3.3.2">gemSpec_Krypt Kapitel 3.3.2</a> erfüllt werden.</li>
+</ul>
+<h4 id="oauth-protected-resource-well-known-endpoint">OAuth Protected Resource Well-Known Endpoint</h4>
+<p>Dieser Endpunkt bietet eine standardisierte Methode für OAuth Protected Resources (OPR), um ihre Fähigkeiten und Konfigurationsdetails zu veröffentlichen (RFC 9728). Er ermöglicht es Clients, die notwendigen Informationen über die OPR abzurufen, wie z.B. unterstützte Schemata, Verifizierungsmethoden, Token-Introspektion-Endpunkte und unterstützte Scopes. Der Endpunkt ist unter dem Pfad <code>/.well-known/oauth-protected-resource</code> relativ zur Basis-URL der Protected Resource erreichbar.</p>
+<hr />
+<h5 id="anfragen">Anfragen</h5>
+<p>Der Endpunkt wird über eine einfache HTTP GET-Anfrage ohne Body aufgerufen.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">GET</span> <span class="nn">/.well-known/oauth-protected-resource</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">api.example.com</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">application/json</span>
+</code></pre></div>
+<hr />
+<h5 id="antworten">Antworten</h5>
+<p>Wie im obigen Abschnitt dargestellt, ist die typische erfolgreiche API-Antwort ein JSON-Objekt, das der im <code>opr-well-known.yaml</code>-Schema definierten Struktur entspricht. Der <code>Content-Type</code>-Header der Antwort ist <code>application/json</code>.</p>
+<p><strong>Statuscodes:</strong></p>
+<ul>
+<li><strong>200 OK:</strong></li>
+<li><strong>Bedeutung:</strong> Die Anfrage war erfolgreich, und die Konfigurationsdaten der Protected Resource wurden als JSON-Objekt im Antwort-Body zurückgegeben.
+  Eine erfolgreiche Anfrage liefert ein JSON-Objekt, das die Konfiguration der Protected Resource beschreibt. Die genauen Felder hängen von der Implementierung und den unterstützten Fähigkeiten der geschützten Resource ab.</li>
+<li><strong>Beispielantwort:</strong></li>
+</ul>
+<p>Content-Type: application/json</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&quot;resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://api.example.com&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">&quot;authorization_servers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="s2">&quot;https://auth1.example.com&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="s2">&quot;https://auth2.example.com&quot;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="nt">&quot;jwks_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://api.example.com/.well-known/jwks.json&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="nt">&quot;scopes_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="s2">&quot;read&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="s2">&quot;write&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="s2">&quot;delete&quot;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">  </span><span class="nt">&quot;bearer_methods_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="s2">&quot;header&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="s2">&quot;body&quot;</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">  </span><span class="nt">&quot;resource_signing_alg_values_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="s2">&quot;RS256&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="s2">&quot;ES256&quot;</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">  </span><span class="nt">&quot;resource_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Example Protected API&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">  </span><span class="nt">&quot;resource_documentation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://docs.example.com/api&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">  </span><span class="nt">&quot;resource_policy_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.example.com/privacy&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">  </span><span class="nt">&quot;resource_tos_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.example.com/terms&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">  </span><span class="nt">&quot;tls_client_certificate_bound_access_tokens&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">  </span><span class="nt">&quot;authorization_details_types_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">    </span><span class="s2">&quot;payment_initiation&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">    </span><span class="s2">&quot;account_access&quot;</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">  </span><span class="nt">&quot;dpop_signing_alg_values_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">    </span><span class="s2">&quot;ES256&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">    </span><span class="s2">&quot;RS512&quot;</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">  </span><span class="nt">&quot;dpop_bound_access_tokens_required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">  </span><span class="nt">&quot;signed_metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6Imh0dHBzOi8vYXBpLmV4YW1wbGUuY29tIn0.XYZ123abc456def789&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">  </span><span class="nt">&quot;zeta_asl_use&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;required&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">  </span><span class="nt">&quot;api_versions_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="w">      </span><span class="nt">&quot;major_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.4.2&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="w">      </span><span class="nt">&quot;documentation_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/gematik/zeta/api/v1&quot;</span>
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a><span class="w">      </span><span class="nt">&quot;major_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.0.0-beta.3&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beta&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a><span class="w">      </span><span class="nt">&quot;documentation_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/gematik/zeta/api/v2&quot;</span>
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a><span class="w">      </span><span class="nt">&quot;major_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.3.0&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;deprecated&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a><span class="w">      </span><span class="nt">&quot;documentation_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/gematik/zeta/api/v1&quot;</span>
+<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>404 Not Found:</strong></li>
+<li><strong>Bedeutung:</strong> Der angeforderte Well-Known Endpoint konnte auf dem Server nicht gefunden werden. Dies kann daran liegen, dass die Protected Resource diesen Endpunkt nicht hostet oder falsch konfiguriert ist.</li>
+<li><strong>Beispielantwort:</strong></li>
+</ul>
+<p>Content-Type: application/problem+json</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/404&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OAuth Protected Resource Configuration Not Found&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The requested OAuth Protected Resource Well-Known configuration could not be found at this path.&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/.well-known/oauth-protected-resource&quot;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>500 Internal Server Error:</strong></li>
+<li><strong>Bedeutung:</strong> Ein unerwarteter Fehler ist auf dem Server der Protected Resource aufgetreten, der die Verarbeitung der Anfrage verhindert hat.</li>
+<li><strong>Beispielantwort:</strong> Ein leerer Body, ein generischer
+Content-Type: application/problem+json</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/500&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Internal Server Error&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;An unexpected error occurred while processing your request.&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/.well-known/oauth-protected-resource&quot;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h4 id="authorization-server-well-known-endpoint">Authorization Server Well-Known Endpoint</h4>
+<p>Dieser Endpunkt ermöglicht Clients und anderen Parteien die einfache Entdeckung der Konfigurationsmetadaten eines ZETA Guard OAuth 2.0 Autorisierungsservers (AS) und seiner Fähigkeiten. Er ist gemäß RFC 8414 definiert und bietet eine standardisierte Methode, um Informationen wie Endpunkt-URIs, unterstützte Grant Types und Scopes abzurufen.</p>
+<hr />
+<h5 id="anfragen_1">Anfragen</h5>
+<p>Dieser Endpunkt wird über eine HTTP GET-Anfrage ohne Parameter aufgerufen.</p>
+<p><strong>Methode:</strong>
+<code>GET</code></p>
+<p><strong>Header:</strong>
+Ein <code>Accept</code>-Header mit <code>application/json</code> wird empfohlen, um die bevorzugte Antwortformat anzugeben.</p>
+<p><strong>Beispiel Anfrage:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nf">GET</span> <span class="nn">/.well-known/oauth-authorization-server</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">api.example.com</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">application/json</span>
+</code></pre></div>
+<hr />
+<h5 id="antworten_1">Antworten</h5>
+<p><strong>Statuscodes:</strong></p>
+<ul>
+<li><strong>200 OK:</strong></li>
+<li><strong>Bedeutung:</strong> Die Anfrage war erfolgreich, und der Server gibt die Konfigurationsmetadaten des Autorisierungsservers als JSON-Objekt zurück.</li>
+<li><strong>Content-Type:</strong> <code>application/json</code></li>
+<li><strong>Beispiel Antwort:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">&quot;issuer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://api.example.com&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">&quot;authorization_endpoint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://api.example.com/auth&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="nt">&quot;token_endpoint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://api.example.com/token&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span><span class="nt">&quot;jwks_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://api.example.com/certs&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="nt">&quot;response_types_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="s2">&quot;code&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="s2">&quot;token&quot;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">  </span><span class="nt">&quot;response_modes_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span><span class="s2">&quot;query&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="s2">&quot;fragment&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">    </span><span class="s2">&quot;form_post&quot;</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">  </span><span class="nt">&quot;grant_types_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">    </span><span class="s2">&quot;authorization_code&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">    </span><span class="s2">&quot;token-exchange&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">    </span><span class="s2">&quot;refresh_token&quot;</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="w">  </span><span class="nt">&quot;token_endpoint_auth_methods_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="w">    </span><span class="s2">&quot;private_key_jwt&quot;</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="w">  </span><span class="nt">&quot;token_endpoint_auth_signing_alg_values_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="w">    </span><span class="s2">&quot;ES256&quot;</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="w">  </span><span class="nt">&quot;service_documentation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://api.example.com/docs&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="w">  </span><span class="nt">&quot;code_challenge_methods_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="w">    </span><span class="s2">&quot;S256&quot;</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="w">  </span><span class="nt">&quot;api_versions_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a><span class="w">      </span><span class="nt">&quot;major_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.4.2&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a><span class="w">      </span><span class="nt">&quot;documentation_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/gematik/zeta/api/v1&quot;</span>
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a><span class="w">      </span><span class="nt">&quot;major_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.0.0-beta.3&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beta&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a><span class="w">      </span><span class="nt">&quot;documentation_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/gematik/zeta/api/v2&quot;</span>
+<a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-7-43" name="__codelineno-7-43" href="#__codelineno-7-43"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-7-44" name="__codelineno-7-44" href="#__codelineno-7-44"></a><span class="w">      </span><span class="nt">&quot;major_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-7-45" name="__codelineno-7-45" href="#__codelineno-7-45"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.3.0&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-46" name="__codelineno-7-46" href="#__codelineno-7-46"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;deprecated&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-47" name="__codelineno-7-47" href="#__codelineno-7-47"></a><span class="w">      </span><span class="nt">&quot;documentation_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/gematik/zeta/api/v1&quot;</span>
+<a id="__codelineno-7-48" name="__codelineno-7-48" href="#__codelineno-7-48"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-7-49" name="__codelineno-7-49" href="#__codelineno-7-49"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-7-50" name="__codelineno-7-50" href="#__codelineno-7-50"></a><span class="w">  </span><span class="nt">&quot;api_versions_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-7-51" name="__codelineno-7-51" href="#__codelineno-7-51"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-7-52" name="__codelineno-7-52" href="#__codelineno-7-52"></a><span class="w">      </span><span class="nt">&quot;major_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-7-53" name="__codelineno-7-53" href="#__codelineno-7-53"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.4.2&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-54" name="__codelineno-7-54" href="#__codelineno-7-54"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-55" name="__codelineno-7-55" href="#__codelineno-7-55"></a><span class="w">      </span><span class="nt">&quot;documentation_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/gematik/zeta/api/v1&quot;</span>
+<a id="__codelineno-7-56" name="__codelineno-7-56" href="#__codelineno-7-56"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-7-57" name="__codelineno-7-57" href="#__codelineno-7-57"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-7-58" name="__codelineno-7-58" href="#__codelineno-7-58"></a><span class="w">      </span><span class="nt">&quot;major_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<a id="__codelineno-7-59" name="__codelineno-7-59" href="#__codelineno-7-59"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.0.0-beta.3&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-60" name="__codelineno-7-60" href="#__codelineno-7-60"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beta&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-61" name="__codelineno-7-61" href="#__codelineno-7-61"></a><span class="w">      </span><span class="nt">&quot;documentation_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/gematik/zeta/api/v2&quot;</span>
+<a id="__codelineno-7-62" name="__codelineno-7-62" href="#__codelineno-7-62"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-7-63" name="__codelineno-7-63" href="#__codelineno-7-63"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-7-64" name="__codelineno-7-64" href="#__codelineno-7-64"></a><span class="w">      </span><span class="nt">&quot;major_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-7-65" name="__codelineno-7-65" href="#__codelineno-7-65"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.3.0&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-66" name="__codelineno-7-66" href="#__codelineno-7-66"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;deprecated&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-67" name="__codelineno-7-67" href="#__codelineno-7-67"></a><span class="w">      </span><span class="nt">&quot;documentation_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/gematik/zeta/api/v1&quot;</span>
+<a id="__codelineno-7-68" name="__codelineno-7-68" href="#__codelineno-7-68"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-7-69" name="__codelineno-7-69" href="#__codelineno-7-69"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-7-70" name="__codelineno-7-70" href="#__codelineno-7-70"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>404 Not Found:</strong></p>
+<p><strong>Content-Type:</strong>
+<code>application/problem+json</code></p>
+<p>Dies tritt auf, wenn der Endpunkt unter der angefragten URL nicht gefunden werden kann.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/404&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not Found&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The requested resource was not found on this server.&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/.well-known/oauth-authorization-server&quot;</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>500 Internal Server Error:</strong></p>
+<p><strong>Content-Type:</strong>
+<code>application/problem+json</code></p>
+<p>Dies tritt auf, wenn ein unerwarteter Fehler auf dem Server auftritt, der die Anfrage nicht verarbeiten konnte.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/500&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Internal Server Error&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;An unexpected error occurred while processing your request.&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/.well-known/oauth-authorization-server&quot;</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h4 id="nonce-endpoint">Nonce Endpoint</h4>
+<p>Dieser Endpunkt ermöglicht Clients das Abrufen eines einmaligen kryptographischen Werts, einer "Nonce". Im Kontext der ZETA-Architektur dient diese Nonce primär dazu, eine spezifische <strong>TPM-Attestierung an eine aktuelle Transaktion zu binden</strong>, um Replay-Angriffe zu verhindern. Sie wird Teil der <code>attestation_challenge</code>, die vom TPM signiert wird.</p>
+<p>Beim Token Endpunkt wird ebenfalls eine Nonce benötigt, um die Integrität der Transaktion zu gewährleisten. Diese Nonce wird in der Client Assertion verwendet, um Replay-Angriffe zu verhindern und die Bindung zwischen der Client Authentifizierung und der Transaktion sicherzustellen.</p>
+<hr />
+<h5 id="anfragen_2">Anfragen</h5>
+<p><strong>Beispiel Anfrage:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nf">GET</span> <span class="nn">/nonce</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">api.example.com</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">application/json</span>
+</code></pre></div>
+<hr />
+<h5 id="antworten_2">Antworten</h5>
+<p><strong>Statuscodes:</strong></p>
+<ul>
+<li><strong>200 OK:</strong></li>
+<li><strong>Bedeutung:</strong> Die Anfrage war erfolgreich, und der Server gibt die Nonce als JSON-Objekt zurück.</li>
+<li><strong>Content-Type:</strong> <code>application/json</code></li>
+<li><strong>Beispiel Antwort:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="nt">&quot;nonce&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;s.fRzE3M0J_QxL-x.6gA~x&quot;</span><span class="p">,</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span><span class="nt">&quot;expires_in&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Felder der erfolgreichen Antwort:</strong></p>
+<ul>
+<li><code>nonce</code> (String): Der generierte, einmalige kryptographische Wert.</li>
+<li><code>expires_in</code> (Integer): Die Gültigkeitsdauer der Nonce in Sekunden, ab dem Zeitpunkt der Ausstellung. Nach Ablauf dieser Zeit sollte die Nonce vom Server nicht mehr akzeptiert werden.</li>
+</ul>
+<p><strong>404 Not Found:</strong></p>
+<p><strong>Content-Type:</strong>
+<code>application/problem+json</code></p>
+<p>Dies tritt auf, wenn der Endpunkt unter der angefragten URL nicht gefunden werden kann.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">{</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/404&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not Found&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The requested resource was not found on this server.&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/nonce&quot;</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>429 Too Many Requests:</strong></p>
+<p>Dieser Fehler tritt auf, wenn der Client die vom Server festgelegten Ratenbegrenzungen überschreitet.</p>
+<p><strong>Content-Type:</strong>
+<code>application/problem+json</code></p>
+<p><strong>Retry-After:</strong> 60</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">{</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tag:authorization.example.com,2023:oauth:nonce:rate_limit_exceeded&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Rate Limit Exceeded&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">429</span><span class="p">,</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;You have exceeded the allowed number of nonce requests. Please try again after 60 seconds.&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/nonce&quot;</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><code>Retry-After</code> Header (optional): Gibt an, wie viele Sekunden der Client warten sollte, bevor er eine weitere Anfrage stellt.</li>
+</ul>
+<p><strong>500 Internal Server Error:</strong></p>
+<p><strong>Content-Type:</strong>
+<code>application/problem+json</code></p>
+<p>Dies tritt auf, wenn ein unerwarteter Fehler auf dem Server auftritt, der die Anfrage nicht verarbeiten konnte.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">{</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/500&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Internal Server Error&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;An unexpected error occurred while processing your request.&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/nonce&quot;</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h4 id="dynamic-client-registration-endpoint">Dynamic Client Registration Endpoint</h4>
+<p>Dieser Endpunkt ermöglicht die dynamische Registrierung neuer OAuth 2.0 Clients beim Authorization Server gemäß RFC 7591. Der Prozess dient dazu, eine <code>client_id</code> zu erhalten und den öffentlichen <strong>Client Instance Key</strong> zu registrieren, der für die <code>private_key_jwt</code> Client-Authentifizierung verwendet wird.</p>
+<p>Die Registrierung selbst erfordert <strong>keine</strong> Attestierung. Der Client erhält den Status <code>pending_attestation</code> und muss seine Integrität beim ersten Token Exchange beweisen, um aktiviert zu werden. Die Registrierung muss über eine TLS-geschützte Verbindung erfolgen.</p>
+<p><em>Hinweis:</em> Es fehlen noch die Operationen zur Verwaltung von bestehenden Client Registrierungen (z.B. Aktualisierung, Löschung). Diese werden in zukünftigen Versionen der API ergänzt.</p>
+<hr />
+<h5 id="anfragen-fur-stationare-clients">Anfragen für stationäre Clients</h5>
+<p>Der Client sendet eine <code>POST</code>-Anfrage an den <code>/register</code>-Endpunkt. Der Anfrage-Body ist ein JSON-Objekt, das die Metadaten des zu registrierenden Clients enthält.</p>
+<p><strong>Beispiel Anfrage:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nf">POST</span> <span class="nn">/register</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">api.example.com</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">application/json</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="na">Content-type</span><span class="o">:</span> <span class="l">application/json</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">{</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nt">&quot;client_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Praxis-PC-123&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span><span class="nt">&quot;token_endpoint_auth_method&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;private_key_jwt&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span><span class="nt">&quot;grant_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">    </span><span class="s2">&quot;urn:ietf:params:oauth:grant-type:token-exchange&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">    </span><span class="s2">&quot;refresh_token&quot;</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">  </span><span class="nt">&quot;jwks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">    </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">      </span><span class="p">{</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">        </span><span class="nt">&quot;kty&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EC&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w">        </span><span class="nt">&quot;crv&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;P-256&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">        </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="w">        </span><span class="nt">&quot;y&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="w">        </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sig&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="w">        </span><span class="nt">&quot;kid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span>
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="w">    </span><span class="p">]</span>
+<a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a><span class="w">  </span><span class="nt">&quot;redirect_uris&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a><span class="w">    </span><span class="s2">&quot;https://client.example.org/cb&quot;</span>
+<a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Erforderliche Parameter im Anfrage-Body:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Typ</th>
+<th style="text-align: left;">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>grant_types</code></td>
+<td style="text-align: left;"><code>array</code></td>
+<td style="text-align: left;">Eine Liste der Grant Types, die der Client verwenden darf.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>jwks</code></td>
+<td style="text-align: left;"><code>object</code></td>
+<td style="text-align: left;">Das JSON Web Key Set [RFC7517] des Clients, das den öffentlichen <strong>Client Instance Key</strong> enthält.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>token_endpoint_auth_method</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Muss <code>private_key_jwt</code> sein, um die Client-Authentifizierung mittels signierter JWTs zu erzwingen.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>redirect_uris</code></td>
+<td style="text-align: left;"><code>array</code></td>
+<td style="text-align: left;">Optional für reine Backend-Clients, aber empfohlen. Mindestens eine URI, die für interaktive Flows (z.B. zukünftige mobile Clients) verwendet wird.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>client_name</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Optional. Ein für Menschen lesbarer Name für den Client.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h5 id="antworten_3">Antworten</h5>
+<p>Der Authorization Server antwortet mit verschiedenen HTTP-Statuscodes und entsprechenden JSON-Objekten, die entweder die erfolgreiche Registrierung oder Fehlermeldungen gemäß RFC 9457 ("Problem Details for HTTP APIs") beschreiben.</p>
+<p><strong>Statuscodes:</strong></p>
+<ul>
+<li><strong>201 Created:</strong></li>
+<li><strong>Bedeutung:</strong> Die Registrierung war erfolgreich. Der Server gibt die <code>client_id</code> und die registrierten Metadaten zurück.</li>
+<li><strong>Content-Type:</strong> <code>application/json</code></li>
+<li>
+<p><strong>Beispiel Antwort:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">{</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="nt">&quot;client_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1234567890abcdef&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">  </span><span class="nt">&quot;client_id_issued_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1678886400</span><span class="p">,</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">  </span><span class="nt">&quot;grant_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">    </span><span class="s2">&quot;urn:ietf:params:oauth:grant-type:token-exchange&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">    </span><span class="s2">&quot;refresh_token&quot;</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">  </span><span class="nt">&quot;token_endpoint_auth_method&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;private_key_jwt&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">  </span><span class="nt">&quot;client_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Praxis-PC-123&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">  </span><span class="nt">&quot;jwks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="w">    </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w">      </span><span class="p">{</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="w">        </span><span class="nt">&quot;kty&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EC&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;crv&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;P-256&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;y&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;use&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sig&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;kid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="w">    </span><span class="p">]</span>
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="w">   </span><span class="nt">&quot;redirect_uris&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="w">    </span><span class="s2">&quot;https://client.example.org/cb&quot;</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a><span class="p">}</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>400 Bad Request:</strong></p>
+</li>
+<li><strong>Bedeutung:</strong> Die Anfrage war fehlerhaft, z.B. fehlende oder ungültige Parameter.</li>
+<li><strong>Content-Type:</strong> <code>application/problem+json</code></li>
+<li><strong>Beispiel Antwort:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">{</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/400&quot;</span><span class="p">,</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bad Request&quot;</span><span class="p">,</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Invalid request parameters.&quot;</span><span class="p">,</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/register&quot;</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>409 Conflict  :</strong></li>
+<li><strong>Bedeutung:</strong> Ein Client mit dem angegebenen <code>Client_Instance_Public_Key</code> existiert bereits.</li>
+<li><strong>Content-Type:</strong> <code>application/problem+json</code></li>
+<li><strong>Beispiel Antwort:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">{</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/409&quot;</span><span class="p">,</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Conflict&quot;</span><span class="p">,</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">409</span><span class="p">,</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A client with the provided Client_Instance_Public_Key already exists.&quot;</span><span class="p">,</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/register&quot;</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>500 Internal Server Error:</strong></li>
+<li><strong>Bedeutung:</strong> Ein unerwarteter Fehler ist auf dem Server aufgetreten, der die Anfrage nicht verarbeiten konnte.</li>
+<li><strong>Content-Type:</strong> <code>application/problem+json</code></li>
+<li><strong>Beispiel Antwort:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="p">{</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/500&quot;</span><span class="p">,</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Internal Server Error&quot;</span><span class="p">,</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;An unexpected error occurred while processing your request.&quot;</span><span class="p">,</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/register&quot;</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h5 id="anfragen-fur-mobile-clients">Anfragen für mobile Clients</h5>
+<p>Die Registrierung für mobile Clients erfolgt ähnlich wie bei stationären Clients, jedoch mit anderen Anforderungen an die Client-Attestation, die auf den jeweiligen Plattformen basieren. Mobile Clients verwenden eine spezifische Attestierungsmethode, die auf den Betriebssystemen basiert (z.B. Android SafetyNet, iOS DeviceCheck).</p>
+<p>Die Beschreibung wird in Stufe 2 der ZETA API ergänzt.</p>
+<h4 id="token-endpoint">Token Endpoint</h4>
+<p>Der Token Endpoint des Autorisierungsservers (AS) ermöglicht den Austausch eines Tokens gegen ein vom Authorizationserver ausgestelltes Access Token, gemäß dem OAuth 2.0 Token Exchange (RFC 8693) oder die Erneuerung von Token (<code>refresh_token</code>). Der Client muss sich mit einer JWT Client Assertion gegenüber den Authorization Server authentifizieren.</p>
+<p>Der Endpunkt ist ein POST-Endpunkt, der Formular-kodierte Daten (<code>application/x-www-form-urlencoded</code>) im Body erwartet und JSON-Objekte im Erfolgsfall oder "Problem Details" im Fehlerfall zurückgibt.</p>
+<p>Der Endpunkt unterstützt verschiedene Grant Types, einschließlich <code>authorization_code</code> (ab ZETA Stufe 2), <code>urn:ietf:params:oauth:grant-type:token-exchange</code>, <code>refresh_token</code> und <code>urn:ietf:params:oauth:grant-type:token-exchange</code>.</p>
+<h5 id="anfragen_3">Anfragen</h5>
+<p>Der Token Endpoint empfängt POST-Anfragen mit dem Content-Type <code>application/x-www-form-urlencoded</code>. Die Anfrage muss die notwendigen Parameter für den Token Exchange Grant Type enthalten, sowie die Client-Authentifizierung mittels JWT Bearer Client Assertion.</p>
+<p><strong>HTTP Methode:</strong> <code>POST</code></p>
+<p><strong>Pfad:</strong> <code>/token</code></p>
+<p><strong>Content-Type:</strong> <code>application/x-www-form-urlencoded</code></p>
+<p><strong>Anfrageparameter:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Typ</th>
+<th style="text-align: left;">Erforderlich</th>
+<th style="text-align: left;">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>grant_type</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Ja</td>
+<td style="text-align: left;">Der Grant Type. Für Token Exchange ist dies immer <code>urn:ietf:params:oauth:grant-type:token-exchange</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>client_assertion_type</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Ja</td>
+<td style="text-align: left;">Gibt den Typ der Client Assertion an. Für JWT Bearer Client Assertion ist dies immer <code>urn:ietf:params:oauth:client-assertion-type:jwt-bearer</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>client_assertion</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Ja</td>
+<td style="text-align: left;">Die JWT, die zur Authentifizierung des Clients dient. Diese JWT muss vom Client signiert sein und folgende Claims enthalten: <br/>- <code>iss</code> (Issuer): Die Client ID.<br/>- <code>sub</code> (Subject): Die Client ID.<br/>- <code>aud</code> (Audience): Die URL des Token Endpoints.<br/>- <code>exp</code> (Expiration Time): Die Zeit, nach der die JWT ungültig wird.<br/>- <code>jti</code> (JWT ID): Ein eindeutiger Bezeichner für diese JWT, um Replay-Angriffe zu verhindern.<br/>- <code>iat</code> (Issued At): Zeitpunkt der Ausstellung der JWT.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>resource</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Ja</td>
+<td style="text-align: left;">Eine URI, die den Zieldienst oder die Zielressource angibt, für die der Client das angeforderte Sicherheitstoken verwenden möchte. Dadurch kann der Autorisierungsserver die für das Ziel geeigneten Richtlinien anwenden, z. B. den Typ und Inhalt des auszugebenden Tokens bestimmen oder festlegen, ob und wie das Token verschlüsselt werden soll.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>subject_token_type</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Ja</td>
+<td style="text-align: left;">Der Typ des Tokens, das ausgetauscht werden soll. Beispiele könnten sein: <code>urn:ietf:params:oauth:token-type:access_token</code>, <code>urn:ietf:params:oauth:token-type:jwt</code> oder andere spezifische URIs.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>subject_token</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Ja</td>
+<td style="text-align: left;">Das eigentliche Token, das ausgetauscht werden soll. Dies kann ein JWT, ein Referenz-Token oder ein anderes Format sein, abhängig vom <code>subject_token_type</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>scope</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Eine durch Leerzeichen getrennte Liste von Scopes, für die der Access Token ausgestellt werden soll. Wenn nicht angegeben, werden die mit dem <code>subject_token</code> und/oder Client verbundenen Standard-Scopes verwendet.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel Anfrage:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">  </span>https://as.example.com/token<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/x-www-form-urlencoded&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;DPoP: &lt;signed_dpop_jwt&gt;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Atoken-exchange&amp;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;client_assertion_type=urn%3Aietf%3Aparams%3Aoauth%3Aclient-assertion-type%3Ajwt-bearer&amp;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;client_assertion=eyJhbGciOiJFUzI1NiIsImtpZCI6InNvbWVfa2V5X2lkIn0.eyJpc3MiOiJjbGllbnRfaWQwMDEiLCJzdWIiOiJjbGllbnRfaWQwMDEiLCJhdWQiOiJodHRwczovL2F1dGhvcml6YXRpb24uc2VydmVyLmRlL3Rva2VuIiwiZXhwIjoxNjk1NTA0NjAwLCJpYXQiOjE2OTU1MDI4MDAsImp0aSI6ImFiYzEyMzQ1NiJ9.SOME_SIGNATURE_PART_ONE.SOME_SIGNATURE_PART_TWO&amp;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;resource=https%3A%2F%2Fapi.example.com%2F/resource&amp;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;subject_token_type=urn%3Aietf%3Aparams%3Aoauth%3Atoken-type%3Ajwt&amp;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;subject_token=eyJhbGciOiJFUzI1NiIsImtpZCI6InNvbWVfc3ViamVjdF9rZXlfaWQifQ.eyJpc3MiOiJzb21lX3N1YmplY3RfYXV0aG9yaXR5Iiwic3ViIjoiMTIzNDU2Nzg5MCIsImF1ZCI6Imh0dHBzOi8vYXV0aG9yaXphdGlvbi5zZXJ2ZXIuZGUvdG9rZW4iLCJleHAiOjE2OTU1MDI4NjAsImlhdCI6MTY5NTUwMjgwMH0.SM(C)-B_SIGNATURE&amp;&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;scope=resource.read%20resource.write&#39;</span>
+</code></pre></div>
+<h5 id="antworten_4">Antworten</h5>
+<p>Antworten werden als JSON-Objekte mit dem <code>Content-Type: application/json</code> im Erfolgsfall und <code>application/problem+json</code> im Fehlerfall zurückgegeben. Fehlerantworten folgen dem "Problem Details for HTTP APIs"-Standard (RFC 9457).</p>
+<p><strong>Statuscodes:</strong></p>
+<ul>
+<li><strong>200 OK:</strong></li>
+<li><strong>Bedeutung:</strong> Die Anfrage war erfolgreich, und der Server gibt das Access Token und andere Metadaten zurück.</li>
+<li><strong>Content-Type:</strong> <code>application/json</code></li>
+<li><strong>Beispiel Antwort:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="p">{</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">  </span><span class="nt">&quot;access_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6InRva2VuX2tleV9pZCJ9.eyJpc3MiOiJhdXRoLnNlcnZlci5kZSIsImV4cCI6MTY5NTUwMjgwMCwiYXVkIjpbInJlc291cmNlLnNlcnZlci5kZSJdLCJzdWIiOiIxMjM0NTY3ODkwIiwiY2xpZW50X2lkIjoiZXhhbXBsZV9jbGllbnRfaWQiLCJpYXQiOjE2OTU1MDI4MDAsImp0aSI6ImV4YW1wbGVfamRpX3ZhbHVlIiwic2NvcGUiOiJyZXNvdXJjZS5yZWFkIHJlc291cmNlLndyaXRlIiwiY25mIjp7ImprdCI6ImV4YW1wbGVfamt0X2hhc2gifX0.NEW_SIGNATURE_PLACEHOLDER&quot;</span><span class="p">,</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">  </span><span class="nt">&quot;token_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DPoP&quot;</span><span class="p">,</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">  </span><span class="nt">&quot;expires_in&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3600</span><span class="p">,</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="w">  </span><span class="nt">&quot;scope&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;resource.read resource.write&quot;</span><span class="p">,</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">  </span><span class="nt">&quot;refresh_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;some_refresh_token_string&quot;</span><span class="p">,</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="w">  </span><span class="nt">&quot;issued_token_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;urn:ietf:params:oauth:token-type:access_token&quot;</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Inhalt des Access Tokens:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="p">{</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">  </span><span class="nt">&quot;iss&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;auth.server.de&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">  </span><span class="nt">&quot;exp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1695502800</span><span class="p">,</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">  </span><span class="nt">&quot;aud&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;resource.server.de&quot;</span><span class="p">],</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="w">  </span><span class="nt">&quot;sub&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1234567890&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">  </span><span class="nt">&quot;client_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;my_oauth_client_id&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="w">  </span><span class="nt">&quot;iat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1695502800</span><span class="p">,</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="w">  </span><span class="nt">&quot;jti&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a_unique_jwt_identifier_12345&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="w">  </span><span class="nt">&quot;scope&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;resource.read resource.write&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="w">  </span><span class="nt">&quot;cnf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="w">    </span><span class="nt">&quot;jkt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S7uGv0kQ0g2J_2z8Y_yXm-X_yL0_yXk_Xk_yY1W_Xk&quot;</span>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>400 Bad Request:</strong></li>
+<li><strong>Bedeutung:</strong> Die Anfrage war fehlerhaft, z.B. fehlende oder ungültige Parameter.</li>
+<li><strong>Content-Type:</strong> <code>application/problem+json</code></li>
+<li><strong>Beispiel Antwort:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="p">{</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/400&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bad Request&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Invalid request parameters.&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/token&quot;</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>401 Unauthorized:</strong></li>
+<li><strong>Bedeutung:</strong> Die Client-Authentifizierung ist fehlgeschlagen, z.B. ungültige Client Assertion.</li>
+<li><strong>Content-Type:</strong> <code>application/problem+json</code></li>
+<li><strong>Beispiel Antwort:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="p">{</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/401&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Unauthorized&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">401</span><span class="p">,</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Client authentication failed.&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/token&quot;</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>403 Forbidden:</strong></li>
+<li><strong>Bedeutung:</strong> Der Client ist nicht berechtigt, den Token Exchange durchzuführen, z.B. wenn der <code>subject_token</code> nicht gültig ist oder der Client nicht die erforderlichen Berechtigungen hat.</li>
+<li><strong>Content-Type:</strong> <code>application/problem+json</code></li>
+<li><strong>Beispiel Antwort:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="p">{</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/403&quot;</span><span class="p">,</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Forbidden&quot;</span><span class="p">,</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">403</span><span class="p">,</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The client is not authorized to perform this token exchange.&quot;</span><span class="p">,</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/token&quot;</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>429 Too Many Requests:</strong></li>
+<li><strong>Bedeutung:</strong> Der Client hat die Rate-Limits überschritten.</li>
+<li><strong>Content-Type:</strong> <code>application/problem+json</code></li>
+<li><strong>Beispiel Antwort:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="p">{</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/429&quot;</span><span class="p">,</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Too Many Requests&quot;</span><span class="p">,</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">429</span><span class="p">,</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Rate limit exceeded. Please try again later.&quot;</span><span class="p">,</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/token&quot;</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>500 Internal Server Error:</strong></li>
+<li><strong>Bedeutung:</strong> Ein unerwarteter Fehler ist auf dem Server aufgetreten, der die Anfrage nicht verarbeiten konnte.</li>
+<li><strong>Content-Type:</strong> <code>application/problem+json</code></li>
+<li><strong>Beispiel Antwort:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="p">{</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://httpstatuses.com/500&quot;</span><span class="p">,</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Internal Server Error&quot;</span><span class="p">,</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;An unexpected error occurred while processing your request.&quot;</span><span class="p">,</span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="w">  </span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/token&quot;</span>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="resource-endpoint">Resource Endpoint</h4>
+<p>Der Resource Endpoint ist der Endpunkt, der von der geschützten Ressource (Protected Resource) bereitgestellt wird, um auf geschützte Daten zuzugreifen. Er ist durch den ZETA Guard PEP vor unberechtigtem Zugriff geschützt. Für den Zugriff auf die geschützte Ressource wird ein gültiges Access Token und ein gültiges <a href="https://www.rfc-editor.org/rfc/rfc9449.html">DPoP Proof</a> benötigt. Zusätzlich kann eine Anwendung ein gültiges <a href="https://gemspec.gematik.de/docs/gemSpec/gemSpec_ZETA/latest/#A_25669">PoPP Proof</a> erfordern.</p>
+<p>Der Resource Endpoint unterstützt neben TLS eine zusätzliche Verschlüsselungsschicht <a href="https://gemspec.gematik.de/docs/gemSpec/gemSpec_Krypt/latest/#8">ZETA/ASL</a> (ZETA/Additional Security Layer).
+Im <a href="#1511-oauth-protected-resource-well-known-endpoint">Well-Known JSON Dokument der geschützten Ressource</a> wird angegeben, ob der Endpunkt ZETA/ASL unterstützt. Der ZETA/ASL Kanal wird nach dem TLS Verbindungsaufbau aufgebaut und verwendet, um die Kommunikation zwischen Client und Resource Endpoint zu sichern.</p>
+<h5 id="anfragen_4">Anfragen</h5>
+<p>Der ZETA Guard PEP empfängt die Anfragen und prüft das Access Token im Authentication Header sowie das DPoP Proof im DPoP Header.</p>
+<p><strong>HTTP Methode:</strong> wird durch die geschützte Ressource bestimmt (z.B. <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>).</p>
+<p><strong>Pfad:</strong> wird durch die geschützte Ressource bestimmt (z.B. <code>/api/resource</code>).</p>
+<p><strong>Content-Type:</strong> wird durch die geschützte Ressource bestimmt (z.B. <code>application/json</code>).</p>
+<h5 id="antworten_5">Antworten</h5>
+<p>Die Antwort des Resource Endpoints hängt von der geschützten Ressource ab und kann verschiedene Statuscodes und Datenformate zurückgeben.</p>
+<h3 id="konnektorti-gateway-endpunkte">Konnektor/TI-Gateway Endpunkte</h3>
+<p>Die Endpunkte im Konnektor oder im Highspeed Konnektoren des TI-Gateways werden für die Erstellung von Signaturen mit Der SM(C)-B sowie für die Abfrage des SM(C)-B Zertifikats während der Authentifizierung am ZETA Guard verwendet.</p>
+<p><em>Hinweis: Perspektivisch ist vorgesehen, dass der Zugriff auf das TI-Gateway über den ZETA Guard erfolgt, um die Sicherheit und Integrität der Kommunikation zu gewährleisten. Während der Authentifizierung wird anstatt der SM(C)-B Identität eine TI-Gateway Identität verwendet.</em></p>
+<h4 id="readcardcertificate">ReadCardCertificate</h4>
+<p>Die Operation <a href="https://gemspec.gematik.de/docs/gemSpec/gemSpec_Kon/latest/#TIP1-A_4698-03">ReadCardCertificate</a> ist in der <a href="https://gemspec.gematik.de/docs/gemSpec/gemSpec_Kon/latest/index.html">Konnektor Spezifikation</a> definiert.</p>
+<h4 id="externalauthenticate">ExternalAuthenticate</h4>
+<p>Die Operation <a href="https://gemspec.gematik.de/docs/gemSpec/gemSpec_Kon/latest/#TIP1-A_4698-03">ExternalAuthenticate</a> ist in der <a href="https://gemspec.gematik.de/docs/gemSpec/gemSpec_Kon/latest/index.html">Konnektor Spezifikation</a> definiert.</p>
+<h3 id="zeta-attestation-service-endpunkte">ZETA Attestation Service Endpunkte</h3>
+<p>Der <code>ZetaAttestationService</code> stellt einen gRPC-Dienst zur Verfügung, der es stationären Clients (Primärsystem) ermöglicht, TPM-signierte Attestierungsinformationen für den Client abzurufen. Diese Informationen basieren auf Integritätsmessungen, die in ausgewählten Platform Configuration Registers (PCRs) des Trusted Platform Module (TPM) gespeichert sind. Der ZETA Guard Authorization Server verwendet diese Attestierungsdaten, um die Integrität und Authentizität der Softwareumgebung des Clients zu verifizieren, bevor Zugriff auf geschützte Ressourcen gewährt wird.</p>
+<p>Der ZETA Attestation Service wird vom Hersteller des stationären Clients bereitgestellt und es muss eine Vertrauensbeziehung zwischen stationären Client und ZETA Attestation Service bestehen, um zu gewährleisten, dass die Attestation über die vorgesehenen Software-Komponenten erfolgt.</p>
+<p><em>Hinweis:</em> Während der Installation oder bei Updates des stationären Clients muss auch ein Update des ZETA Attestation Service erfolgen um eine neue Baseline für die Integrität des stationären Clients zu setzen. Die Baseline besteht aus einem Hash über alle unveränderlichen Komponenten des stationären Clients, inkl. ZETA Attestation Service.</p>
+<p><em>Hinweis:</em> Der ZETA Attestation Service muss bei jedem Start des Clients die Messung über die Integrität des Clients durchführen und in das PCR schreiben.</p>
+<p><em>Hinweis:</em> Der ZETA Attestation Service ist nicht für mobile Clients vorgesehen. Mobile Clients verwenden eine andere Attestierungsmethode, die auf den jeweiligen Plattformen basiert (z.B. Android SafetyNet, iOS DeviceCheck).</p>
+<p><em>Hinweis:</em> TODO Umgang mit Messung des Clients weicht von Baseline ab; empfohlenes Verhalten für Client und ZetaAttestationService (z. B. automatisch Support informieren)</p>
+<h4 id="dienstdefinition">Dienstdefinition</h4>
+<ul>
+<li><strong>Service Name:</strong> <code>zeta.attestation.service.v1.ZetaAttestationService</code></li>
+<li><strong>Proto Buffer Spezifikation:</strong> <a href="/src/gRPC/zeta-attestation-service.proto">zeta-attestation-service.proto</a></li>
+</ul>
+<h4 id="rpc-methoden">RPC Methoden</h4>
+<h5 id="getattestation">GetAttestation</h5>
+<p>Diese RPC-Methode ermöglicht es Clients, eine signierte Attestierungs-Quote vom TPM des Systems anzufordern, die spezifische PCR-Werte und eine vom Client bereitgestellte Challenge enthält.</p>
+<h6 id="request-nachricht-getattestationrequest">Request-Nachricht: <code>GetAttestationRequest</code></h6>
+<p>Die <code>GetAttestationRequest</code>-Nachricht enthält die Parameter, die für die Anforderung einer Attestierung benötigt werden.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feld</th>
+<th style="text-align: left;">Typ</th>
+<th style="text-align: left;">Erforderlich</th>
+<th style="text-align: left;">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>attestation_challenge</code></td>
+<td style="text-align: left;"><code>bytes</code></td>
+<td style="text-align: left;">Ja</td>
+<td style="text-align: left;">Ein SHA-256 Hashwert, berechnet aus der Verkettung des SHA-256 Fingerabdrucks des Public Client Instance Keys und einer Nonce vom ZETA Guard Authorization Server. Dient zur Verhinderung von Replay-Angriffen und zur Korrelation.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>pcr_indices</code></td>
+<td style="text-align: left;"><code>repeated uint32</code></td>
+<td style="text-align: left;">Ja</td>
+<td style="text-align: left;">Eine Liste von TPM PCR-Indizes, deren aktuelle Werte in die Attestierungs-Quote aufgenommen und zurückgegeben werden sollen.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Berechnung der <code>attestation_challenge</code></strong>:
+Der Client ist für die korrekte Berechnung dieses Wertes verantwortlich.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="na">data_to_hash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sha256_thumbprint_of_public_client_instance_key_bytes || nonce_from_zeta_guard_bytes</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="na">attestation_challenge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">SHA-256(data_to_hash)</span>
+</code></pre></div>
+<p><strong>Beispiel (Python) für die Berechnung der <code>attestation_challenge</code>:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">hashlib</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="c1"># Beispielwerte</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="n">thumbprint_hex</span> <span class="o">=</span> <span class="s2">&quot;9f3d4f2a6c5e4e21d84c8a713d3c37cfb1a2f3a4b14ad9d8d8d9c0e7c8e7e6f5&quot;</span> <span class="c1"># SHA-256 Fingerabdruck</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="n">nonce_hex</span> <span class="o">=</span> <span class="s2">&quot;a1b2c3d4e5f60718293a4b5c6d7e8f90&quot;</span>
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="n">thumbprint_bytes</span> <span class="o">=</span> <span class="nb">bytes</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="n">thumbprint_hex</span><span class="p">)</span>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="n">nonce_bytes</span> <span class="o">=</span> <span class="nb">bytes</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="n">nonce_hex</span><span class="p">)</span>
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="n">data_to_hash</span> <span class="o">=</span> <span class="n">thumbprint_bytes</span> <span class="o">+</span> <span class="n">nonce_bytes</span>
+<a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="n">attestation_challenge_bytes</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">data_to_hash</span><span class="p">)</span><span class="o">.</span><span class="n">digest</span><span class="p">()</span> <span class="c1"># als Bytes</span>
+<a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a><span class="n">attestation_challenge_hex</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">data_to_hash</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span> <span class="c1"># als Hex-String</span>
+<a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>
+<a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;attestation_challenge (hex): </span><span class="si">{</span><span class="n">attestation_challenge_hex</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a><span class="c1"># In der gRPC Anfrage wird `attestation_challenge_bytes` verwendet.</span>
+</code></pre></div>
+<p><strong>Empfohlene PCR-Indizes:</strong></p>
+<ul>
+<li>PCR 4: Boot Loader Code, Digest</li>
+<li>PCR 5: Boot Loader Configuration, Digest</li>
+<li>PCR 7: Secure Boot State / Policy, Digest</li>
+<li>PCR 10:OS Kernel / IMA, Digest</li>
+<li>PCR 11: OS Components / VSM, Digest,</li>
+<li>PCR 22 or 23 (if available) Client Data</li>
+</ul>
+<h6 id="response-nachricht-getattestationresponse">Response-Nachricht: <code>GetAttestationResponse</code></h6>
+<p>Die <code>GetAttestationResponse</code>-Nachricht enthält die vom Dienst generierten Attestierungsdaten.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feld</th>
+<th style="text-align: left;">Typ</th>
+<th style="text-align: left;">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>attestation_quote</code></td>
+<td style="text-align: left;"><code>bytes</code></td>
+<td style="text-align: left;">Die rohe, signierte Attestierungs-Quote des TPMs (eine TPM2_ATTEST Struktur). Diese Quote enthält die angefragten PCR-Werte sowie den <code>attestation_challenge</code> Wert. Muss clientseitig geparst werden.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>current_pcr_values</code></td>
+<td style="text-align: left;"><code>map&lt;uint32, bytes&gt;</code></td>
+<td style="text-align: left;">Eine Abbildung der angefragten PCR-Indizes auf ihre aktuellen, gemessenen Werte. Die Länge der <code>bytes</code> hängt vom aktiven Hashing-Algorithmus der jeweiligen PCR-Bank ab (z.B. 20 Bytes für SHA-1, 32 Bytes für SHA-256).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>status</code></td>
+<td style="text-align: left;"><code>AttestationStatus</code> (enum)</td>
+<td style="text-align: left;">Der vom ZETA Attestation Service intern ermittelte Status der Attestierung. Gibt an, ob die Messungen erfolgreich waren und ob sie ggf. einer definierten Baseline entsprechen.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>status_message</code></td>
+<td style="text-align: left;"><code>string</code> (optional)</td>
+<td style="text-align: left;">Eine menschenlesbare Beschreibung des Attestierungsstatus oder zusätzliche Informationen, insbesondere im Fehlerfall oder bei einem <code>BASELINE_MISMATCH</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>timestamp</code></td>
+<td style="text-align: left;"><code>google.protobuf.Timestamp</code> (optional)</td>
+<td style="text-align: left;">Der Zeitstempel der Erstellung der Attestierungs-Quote durch den ZETA Attestation Service. Erfordert <code>import "google/protobuf/timestamp.proto";</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>event_log</code></td>
+<td style="text-align: left;"><code>bytes</code> (optional)</td>
+<td style="text-align: left;">Das TPM-Event-Log im plattformspezifischen Format (z.B. TCG PC Client Platform Firmware Profile Specification). Dieses Log detailliert die Sequenz der Erweiterungen der PCRs und ist essentiell für eine vollständige Validierung.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AttestationStatus Enum:</strong></p>
+<p>Definiert die möglichen Statuswerte für die Attestierung, die vom ZETA Attestation Service zurückgegeben werden.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Wert</th>
+<th style="text-align: left;">Numerischer Wert</th>
+<th style="text-align: left;">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>ATTESTATION_STATUS_UNSPECIFIED</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">Der Status ist nicht spezifiziert oder konnte nicht ermittelt werden. Dies sollte als Fehler interpretiert werden.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ATTESTATION_STATUS_SUCCESS</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Die Attestierung war erfolgreich, die Quote wurde generiert und (falls eine Baseline-Prüfung serverseitig erfolgt) die Messungen entsprechen der Baseline.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ATTESTATION_STATUS_BASELINE_MISMATCH</code></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Die Attestierung war technisch erfolgreich, aber die aktuellen PCR-Messwerte weichen von der erwarteten Baseline ab.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ATTESTATION_STATUS_TPM_ERROR</code></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Ein Fehler ist bei der Kommunikation mit dem TPM oder bei einer TPM-Operation aufgetreten (z.B. TPM nicht bereit, PCR nicht lesbar).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ATTESTATION_STATUS_INVALID_REQUEST</code></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Die Anfrageparameter waren ungültig (z.B. <code>attestation_challenge</code> fehlt oder hat falsches Format, ungültige oder nicht unterstützte <code>pcr_indices</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ATTESTATION_STATUS_INTERNAL_ERROR</code></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Ein interner, nicht näher spezifizierter Fehler ist auf Serverseite aufgetreten.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h6 id="fehlerbehandlung">Fehlerbehandlung</h6>
+<p>Der <code>ZetaAttestationService</code> verwendet standardmäßige gRPC-Statuscodes, um das Ergebnis der Operation auf Transportebene zu kommunizieren. Diese werden ergänzt durch den <code>status</code>-Feld in der <code>GetAttestationResponse</code> für anwendungsspezifische Logik. Die <code>google.rpc.Status</code> kann für detailliertere Fehlerinformationen verwendet werden (siehe <code>import "google/rpc/status.proto";</code>).</p>
+<p>Häufige gRPC-Statuscodes:</p>
+<ul>
+<li><strong><code>OK</code> (0):</strong> Die Anfrage war erfolgreich und die <code>GetAttestationResponse</code> enthält die Ergebnisse. Der <code>status</code>-Feld in der Response gibt den anwendungsspezifischen Erfolg oder Misserfolg an.</li>
+<li><strong><code>INVALID_ARGUMENT</code> (3):</strong></li>
+<li>Einer oder mehrere Parameter der Anfrage waren ungültig.</li>
+<li>Beispiele: <code>attestation_challenge</code> fehlt, hat eine falsche Länge oder ein ungültiges Format; <code>pcr_indices</code> ist leer, enthält ungültige oder nicht unterstützte Indizes.</li>
+<li>Der <code>status</code> in der Response könnte <code>ATTESTATION_STATUS_INVALID_REQUEST</code> sein.</li>
+<li><strong><code>UNAUTHENTICATED</code> (16) / <code>PERMISSION_DENIED</code> (7):</strong></li>
+<li>Der anfragende Client ist nicht authentifiziert oder nicht   autorisiert, diese Anfrage zu stellen.</li>
+<li>Relevant, wenn Mechanismen wie mTLS oder Token-basierte   Authentifizierung verwendet werden.</li>
+<li><strong><code>UNAVAILABLE</code> (14):</strong></li>
+<li>Der ZETA Attestation Service kann die Attestierung derzeit nicht   durchführen.</li>
+<li>Beispiele: TPM ist nicht erreichbar oder nicht funktionsfähig;   eine erforderliche Baseline-Konfiguration ist nicht vorhanden.</li>
+<li>Der <code>status</code> in der Response könnte   <code>ATTESTATION_STATUS_TPM_ERROR</code> oder   <code>ATTESTATION_STATUS_INTERNAL_ERROR</code> sein.</li>
+<li><strong><code>INTERNAL</code> (13):</strong></li>
+<li>Ein unerwarteter serverseitiger Fehler ist aufgetreten, der   nicht spezifischer kategorisiert werden kann.</li>
+<li>Der <code>status</code> in der Response ist typischerweise   <code>ATTESTATION_STATUS_INTERNAL_ERROR</code>.</li>
+</ul>
+<h6 id="sicherheitsaspekte">Sicherheitsaspekte</h6>
+<ul>
+<li><strong>Transport-Sicherheit:</strong> Es wird dringend empfohlen, die Kommunikation zwischen Client und <code>ZetaAttestationService</code> mittels TLS, vorzugsweise mTLS (mutual TLS), abzusichern, um Authentizität, Integrität und Vertraulichkeit der übertragenen Daten zu gewährleisten.
+<em>Hinweis: Es wird empfohlen, dass der Installer des Clients und des ZetaAttestationService die Schlüssel für die mTLS Verbindung erzeugt und sicher speichert.</em></li>
+<li><strong>Challenge-Response:</strong> Die <code>attestation_challenge</code> ist ein kritischer Bestandteil zur Verhinderung von Replay-Angriffen. Die <code>nonce</code> muss für jede Attestierungsanfrage eindeutig sein und sicher vom ZETA Guard Authorization Server generiert und an den Client übermittelt werden.</li>
+<li><strong>Event Log Validierung:</strong> Die alleinige Überprüfung der PCR-Werte ist oft nicht ausreichend. Eine gründliche Validierung der Attestierung erfordert das Parsen und Überprüfen des <code>event_log</code>, um die Kausalkette der Messungen nachzuvollziehen. Dies erfolgt im ZETA Guard Authorization Server.</li>
+</ul>
+<hr />
+<h2 id="verwaltung-von-schlusseln-und-session-daten-im-zeta-client">Verwaltung von Schlüsseln und Session-Daten im ZETA Client</h2>
+<h3 id="einleitung">Einleitung</h3>
+<p>Ein ZETA Client muss verschiedene kryptografische Schlüssel und Session-Informationen verwalten, um mit einer oder mehreren ZETA Guard Instanzen sicher und persistent kommunizieren zu können. Die Speicherung und Verwaltung dieser Daten ist kritisch für die Sicherheit und Funktionalität des Clients.</p>
+<p>Es wird zwischen zwei Arten von Daten unterschieden:</p>
+<ol>
+<li><strong>Globale Daten:</strong> Diese sind übergreifend für die Client-Instanz und unabhängig von einer spezifischen ZETA Guard Instanz.</li>
+<li><strong>Pro-ZETA-Guard-Instanz Daten:</strong> Diese Daten sind spezifisch für die Session mit einer einzelnen ZETA Guard Instanz.</li>
+</ol>
+<h4 id="globale-daten-client-ubergreifend">Globale Daten (Client-übergreifend)</h4>
+<p>Diese Daten definieren die langlebige Identität der Client-Anwendung selbst. Sie müssen persistent über alle Sessions und Neustarts der Anwendung hinweg gespeichert werden.</p>
+<ul>
+<li><code>Client Instance Key</code> (Asymmetrisches Schlüsselpaar)</li>
+<li><strong>Beschreibung:</strong> Dies ist das Hauptschlüsselpaar des Clients. Der private Schlüssel wird zur Signierung der Client-Registrierung bei neuen ZETA Guard Instanzen und zur Client Assertion Authentifizierung verwendet. Der öffentliche Schlüssel dient als eindeutiger, kryptografischer Identifikator des Clients.</li>
+<li><strong>Speicheranforderung:</strong> Dieses Schlüsselpaar <strong>muss</strong> einmalig bei der ersten Initialisierung des Clients generiert und anschließend sicher und persistent gespeichert werden. Ein Verlust des privaten Schlüssels bedeutet, dass der Client seine Identität verliert und sich bei allen bereits bekannten ZETA Guard Instanzen neu registrieren muss.</li>
+<li><strong>Sicherheit:</strong> Der private Schlüssel ist das wertvollste Geheimnis des Clients und <strong>darf niemals</strong> im Klartext gespeichert werden. Siehe Kapitel <a href="#164-sicherheitsempfehlungen-für-die-schlüsselspeicherung">1.6.4 Sicherheitsempfehlungen für die Schlüsselspeicherung</a>.</li>
+</ul>
+<h4 id="daten-pro-zeta-guard-instanz">Daten pro ZETA Guard Instanz</h4>
+<p>Für jede ZETA Guard Instanz, mit der der Client eine Verbindung aufbaut, müssen die folgenden Daten separat und zugeordnet zur jeweiligen ZETA Guard-Instanz (z.B. über deren Basis-URL) gespeichert werden.</p>
+<ul>
+<li><code>DPoP Key</code> (Asymmetrisches Schlüsselpaar)</li>
+<li><strong>Beschreibung:</strong> Für jede aktive Session mit einer ZETA Guard Instanz wird ein eigenes, kurzlebiges Schlüsselpaar generiert. Der private Schlüssel wird verwendet, um einzelne API-Anfragen an den Guard zu signieren (<code>DPoP</code>).</li>
+<li><strong>Speicheranforderung:</strong> Dieses Schlüsselpaar ist nur für die Dauer einer Session gültig. Es sollte sicher gespeichert, aber nach Beendigung der Session (z.B. durch Logout oder Token-Ablauf ohne Refresh-Möglichkeit) verworfen werden.</li>
+<li>
+<p><strong>Sicherheit:</strong> Auch dieser private Schlüssel muss für seine Lebensdauer sicher aufbewahrt werden.</p>
+</li>
+<li>
+<p><code>Access Token</code></p>
+</li>
+<li><strong>Beschreibung:</strong> Das vom Authorization Server des ZETA Guards ausgestellte OAuth 2.0 Access Token. Es wird im <code>Authorization</code>-Header bei jeder authentifizierten API-Anfrage mitgesendet.</li>
+<li>
+<p><strong>Speicheranforderung:</strong> Dieses Token ist kurzlebig und muss nach Ablauf erneuert werden. Es kann im Arbeitsspeicher gehalten oder persistent gespeichert werden, um nach einem Neustart der Anwendung die Session wiederaufnehmen zu können. Es besteht ein Diebstahlschutz durch die Bindung an den DPoP Schlüssel.</p>
+</li>
+<li>
+<p><code>Refresh Token</code></p>
+</li>
+<li><strong>Beschreibung:</strong> Das vom Authorization Server des ZETA Guards ausgestellte OAuth 2.0 Refresh Token. Dieses Token kann verwendet werden, um ein neues Access Token zu erhalten, ohne dass der Benutzer sich erneut authentifizieren muss.</li>
+<li>
+<p><strong>Speicheranforderung:</strong> Das Refresh Token ist langlebiger als das Access Token und stellt einen sensiblen Berechtigungsnachweis dar. Es sollte persistent und sicher gespeichert werden. Es besteht ein Diebstahlschutz durch die Bindung an den DPoP Schlüssel.</p>
+</li>
+<li>
+<p><code>Client ID</code></p>
+</li>
+<li><strong>Beschreibung:</strong> Die eindeutige ID, die der ZETA Guard dem ZETA Client während des Registrierungsprozesses zugewiesen hat. Sie wird für die Token-Anforderung benötigt.</li>
+<li>
+<p><strong>Speicheranforderung:</strong> Muss persistent gespeichert werden, solange die Registrierung beim ZETA Guard gültig sein soll.</p>
+</li>
+<li>
+<p><strong>Discovery-Dokument Daten (Well-Known)</strong></p>
+</li>
+<li><strong>Beschreibung:</strong> Die Endpunkt-URLs und Konfigurationsdaten aus den Discovery-Dokumenten des ZETA Guards.</li>
+<li><strong>Speicheranforderung:</strong> Es wird dringend empfohlen, diese Daten zu cachen, um wiederholte Discovery-Anfragen zu vermeiden. Der Cache sollte eine angemessene Lebensdauer haben (z.B. 24 Stunden), um auf Konfigurationsänderungen am Guard reagieren zu können.</li>
+</ul>
+<h4 id="konzeptionelles-speicherlayout">Konzeptionelles Speicherlayout</h4>
+<p>Ein ZETA Client könnte die Daten konzeptionell wie folgt strukturieren:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="p">{</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="w">  </span><span class="nt">&quot;client_instance_private_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geschützter_speicher_ref&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="w">  </span><span class="nt">&quot;guard_sessions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="w">    </span><span class="nt">&quot;https://guard1.example.com&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="w">      </span><span class="nt">&quot;client_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;client-id-beim-zeta-guard-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="w">      </span><span class="nt">&quot;session_private_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geschützter_speicher_ref&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="w">      </span><span class="nt">&quot;access_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ey...&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="w">      </span><span class="nt">&quot;refresh_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;def...&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a><span class="w">      </span><span class="nt">&quot;discovery_cache&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a><span class="w">        </span><span class="nt">&quot;expires_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-12-01T10:00:00Z&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a><span class="w">        </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="w">          </span><span class="nt">&quot;token_endpoint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a><span class="w">          </span><span class="nt">&quot;jwks_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span>
+<a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a><span class="w">    </span><span class="nt">&quot;https://guard2.another-provider.de&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a><span class="w">      </span><span class="nt">&quot;client_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;client-id-beim-zeta-guard-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a><span class="w">      </span><span class="nt">&quot;session_private_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a><span class="w">      </span><span class="nt">&quot;access_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a><span class="w">      </span><span class="nt">&quot;refresh_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a><span class="w">      </span><span class="nt">&quot;discovery_cache&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-31-23" name="__codelineno-31-23" href="#__codelineno-31-23"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-31-24" name="__codelineno-31-24" href="#__codelineno-31-24"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-31-25" name="__codelineno-31-25" href="#__codelineno-31-25"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="sicherheitsempfehlungen-fur-die-schlusselspeicherung">Sicherheitsempfehlungen für die Schlüsselspeicherung</h3>
+<p>Private Schlüssel (<code>Client Instance Key</code>, <code>DPoP Key</code>) sind hochsensible Daten. Ihre Kompromittierung ermöglicht es einem Angreifer, die Identität des Clients zu missbrauchen. Sie müssen daher mit den sichersten, vom jeweiligen Betriebssystem bereitgestellten Mitteln geschützt werden.</p>
+<p><strong>Grundprinzip:</strong> Speichern Sie private Schlüssel <strong>niemals</strong> unverschlüsselt im Dateisystem oder in einer Klartext-Konfigurationsdatei.</p>
+<p>Nutzen Sie stattdessen plattformspezifische, sichere Speicherorte (sog. "Keystores" oder "Secret Vaults"), die die Schlüssel an das Benutzerkonto oder die Maschinenidentität binden.</p>
+<ul>
+<li><strong>Microsoft Windows:</strong></li>
+<li><strong>Empfehlung:</strong> Verwenden Sie die <strong>Data Protection API (DPAPI)</strong>, die über die Funktionen <code>CryptProtectData</code> und <code>CryptUnprotectData</code> zugänglich ist.</li>
+<li>
+<p><strong>Funktionsweise:</strong> DPAPI verschlüsselt Daten mithilfe eines Schlüssels, der aus den Anmeldeinformationen des Benutzers abgeleitet wird. Die Daten können somit nur von demselben Benutzer auf demselben Computer wieder entschlüsselt werden. Dies ist ideal für Desktop-Anwendungen. Für Dienste, die unter einem Systemkonto laufen, kann der Schutz an die Maschinenidentität gebunden werden.</p>
+</li>
+<li>
+<p><strong>Apple macOS:</strong></p>
+</li>
+<li><strong>Empfehlung:</strong> Nutzen Sie den <strong>macOS Keychain (Schlüsselbund)</strong>.</li>
+<li>
+<p><strong>Funktionsweise:</strong> Der Schlüsselbund ist ein zentraler, verschlüsselter Speicher für Passwörter, Zertifikate und Schlüssel. Der Zugriff wird vom Betriebssystem streng kontrolliert und erfordert in der Regel die Zustimmung des Benutzers. Verwenden Sie die <code>Security</code> Framework-APIs, um Schlüssel sicher zu speichern und abzurufen.</p>
+</li>
+<li>
+<p><strong>Linux:</strong></p>
+</li>
+<li><strong>Empfehlung (Desktop-Umgebungen):</strong> Verwenden Sie den <strong>Secret Service DBus API</strong>, der von Diensten wie dem <em>GNOME Keyring</em> oder <em>KWallet</em> implementiert wird. Dies ist der Freedesktop.org-Standard und die bevorzugte Methode für Desktop-Anwendungen.</li>
+<li><strong>Empfehlung (Server/Headless-Umgebungen):</strong>
+        1. <strong>Dateibasierte Verschlüsselung:</strong> Speichern Sie den Schlüssel in einer Datei, die mit einem Master-Passwort verschlüsselt ist (das z.B. beim Start der Anwendung abgefragt wird).
+        2. <strong>Strikte Dateiberechtigungen:</strong> Als absolutes Minimum muss die Schlüsseldatei durch strikte Dateisystemberechtigungen geschützt werden. Der private Schlüssel sollte nur für den Benutzer lesbar sein, unter dem die Anwendung läuft.
+            <div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="c1"># Setzt die Berechtigung, sodass nur der Eigentümer lesen und schreiben darf</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>/pfad/zum/privaten_schluessel.key
+</code></pre></div>
+        Diese Methode bietet jedoch keinen Schutz, wenn ein Angreifer Lesezugriff auf das Dateisystem als der betreffende Benutzer erlangt. Sie sollte möglichst mit zusätzlicher Verschlüsselung kombiniert werden.</li>
+</ul>
+<p><strong>Cross-Plattform-Bibliotheken:</strong> Für in höheren Programmiersprachen (z.B. Python, Go, Rust, C#) entwickelte Clients existieren oft Bibliotheken, die die plattformspezifischen Speicher abstrahieren und eine einheitliche API für den Zugriff auf den Windows DPAPI, den macOS Keychain und den Secret Service unter Linux bieten. Die Verwendung solcher Bibliotheken wird empfohlen.</p>
+<h2 id="versionierung">Versionierung</h2>
+<p>Um eine stabile und vorhersagbare Entwicklungsumgebung für Client-Anwendungen zu gewährleisten, folgt die ZETA API strikt den Prinzipien von <strong>Semantic Versioning 2.0.0 (SemVer)</strong>. Jede Änderung an der API wird klassifiziert, um die Auswirkungen auf bestehende Clients transparent zu machen.</p>
+<h3 id="versionierungsschema-majorminorpatch">Versionierungsschema: MAJOR.MINOR.PATCH</h3>
+<p>Jede ZETA Guard Instanz deklariert ihre API-Version im Format <code>MAJOR.MINOR.PATCH</code> (z.B. <code>1.2.3</code>). Die Bedeutung der einzelnen Komponenten ist wie folgt definiert:</p>
+<ul>
+<li><strong>MAJOR-Version (z.B. <code>1</code>.2.3):</strong> Wird erhöht, wenn <strong>rückwärtsinkompatible ("breaking") Änderungen</strong> an der API vorgenommen werden. Dies erfordert eine Anpassung aufseiten des Clients, um weiterhin korrekt zu funktionieren.</li>
+<li>
+<p><em>Beispiele:</em> Entfernen eines Endpunkts, Umbenennung eines JSON-Feldes, Änderung eines Felddatentyps, Hinzufügen eines verpflichtenden Request-Parameters.</p>
+</li>
+<li>
+<p><strong>MINOR-Version (z.B. 1.<code>2</code>.3):</strong> Wird erhöht, wenn <strong>neue Funktionalität in einer rückwärtskompatiblen Weise</strong> hinzugefügt wird. Bestehende Clients dürfen durch diese Änderungen nicht beeinträchtigt werden.</p>
+</li>
+<li>
+<p><em>Beispiele:</em> Hinzufügen eines neuen API-Endpunkts, Hinzufügen eines neuen, optionalen Feldes in einer JSON-Antwort, Hinzufügen eines neuen, optionalen Request-Parameters.</p>
+</li>
+<li>
+<p><strong>PATCH-Version (z.B. 1.2.<code>3</code>):</strong> Wird erhöht, wenn <strong>rückwärtskompatible Fehlerbehebungen ("bug fixes")</strong> vorgenommen werden, die das Verhalten der API korrigieren, aber keine neue Funktionalität einführen.</p>
+</li>
+<li><em>Beispiele:</em> Korrektur einer fehlerhaften Validierungslogik, Behebung eines internen Fehlers, der zu einem <code>500 Internal Server Error</code> führte.</li>
+</ul>
+<p>Zusätzlich können Prerelease-Tags verwendet werden (z.B. <code>2.0.0-beta.1</code>), um instabile Vorabversionen zu kennzeichnen.</p>
+<h4 id="implementierung-der-versionierung">Implementierung der Versionierung</h4>
+<p>Die Versionierung wird durch eine Kombination aus URL-Pfad, HTTP-Headern und dem Discovery-Dokument umgesetzt.</p>
+<h5 id="1-url-pfad-fur-die-major-version">1. URL-Pfad für die MAJOR-Version</h5>
+<p>Rückwärtsinkompatible Änderungen sind am einschneidendsten. Daher wird die <strong>MAJOR-Version</strong> direkt und explizit im URL-Pfad der API geführt.</p>
+<ul>
+<li><strong>Schema:</strong> <code>https://&lt;guard-base-url&gt;/zeta/v{major-version}/&lt;endpoint&gt;</code></li>
+<li><strong>Beispiel für Version <code>1.4.2</code>:</strong> <code>POST https://guard.example.com/zeta/v1/token</code></li>
+<li><strong>Beispiel für Version <code>2.0.0</code>:</strong> <code>POST https://guard.example.com/zeta/v2/token</code></li>
+</ul>
+<h5 id="2-discovery-dokument-als-source-of-truth">2. Discovery-Dokument als "Source of Truth"</h5>
+<p>Die Discovery-Dokumente (<code>/.well-known/oauth-protected-resource</code> und <code>/.well-known/oauth-authorization-server</code>) sind die zentrale Anlaufstelle für einen Client, um die exakten, vom ZETA Guard unterstützten Versionen zu ermitteln.</p>
+<ul>
+<li><strong><code>api_versions_supported</code>:</strong> Dieses JSON-Objekt listet alle vom ZETA Guard angebotenen MAJOR-Versionen mit ihrer jeweiligen vollen SemVer-Version auf.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="c1">// Beispiel-Ausschnitt aus /.well-known/...</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="p">{</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="w">  </span><span class="nt">&quot;issuer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://zeta-guard.example.com&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="w">  </span><span class="c1">// ... andere Endpunkte</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="w">  </span><span class="nt">&quot;api_versions_supported&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a><span class="w">      </span><span class="nt">&quot;major_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.4.2&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Die volle, stabile SemVer-Version für v1</span>
+<a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stable&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a><span class="w">      </span><span class="nt">&quot;documentation_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://gematik.github.io/ZETA/v1/&quot;</span>
+<a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-33-12" name="__codelineno-33-12" href="#__codelineno-33-12"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-33-13" name="__codelineno-33-13" href="#__codelineno-33-13"></a><span class="w">      </span><span class="nt">&quot;major_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<a id="__codelineno-33-14" name="__codelineno-33-14" href="#__codelineno-33-14"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.0.0-beta.3&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Eine instabile Vorabversion für v2</span>
+<a id="__codelineno-33-15" name="__codelineno-33-15" href="#__codelineno-33-15"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beta&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-16" name="__codelineno-33-16" href="#__codelineno-33-16"></a><span class="w">      </span><span class="nt">&quot;documentation_uri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://gematik.github.io/ZETA/v2/&quot;</span>
+<a id="__codelineno-33-17" name="__codelineno-33-17" href="#__codelineno-33-17"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-33-18" name="__codelineno-33-18" href="#__codelineno-33-18"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-33-19" name="__codelineno-33-19" href="#__codelineno-33-19"></a><span class="p">}</span>
+</code></pre></div>
+<h5 id="3-http-header-zur-laufzeit-identifikation">3. HTTP-Header zur Laufzeit-Identifikation</h5>
+<p>Jede Antwort des ZETA Guards enthält einen <code>ZETA-API-Version</code>-Header, der die exakte SemVer-Version der ausführenden Instanz angibt. Dies ist besonders für Debugging und Logging wertvoll.</p>
+<ul>
+<li><strong>Beispiel-Response-Header:</strong>
+    <code>HTTP/1.1 200 OK</code>
+    <code>Content-Type: application/json</code>
+    <code>ZETA-API-Version: 1.4.2</code></li>
+</ul>
+<h4 id="client-verhalten-und-kompatibilitatsregeln">Client-Verhalten und Kompatibilitätsregeln</h4>
+<p>Um die Stabilität zu gewährleisten, müssen Clients die folgenden Regeln befolgen:</p>
+<ol>
+<li>
+<p><strong>Toleranz gegenüber MINOR- und PATCH-Versionen:</strong> Ein Client, der für eine bestimmte API-Version entwickelt wurde (z.B. <code>1.2.0</code>), <strong>muss</strong> nahtlos mit jeder neueren, rückwärtskompatiblen Version derselben MAJOR-Version (z.B. <code>1.3.0</code> oder <code>1.2.1</code>) funktionieren. Dies bedeutet konkret:</p>
+<ul>
+<li><strong>Unbekannte Felder ignorieren:</strong> Der Client-Parser <strong>muss</strong> unbekannte Felder in JSON-Antworten ignorieren und darf keinen Fehler auslösen.</li>
+<li><strong>Reihenfolgeunabhängigkeit:</strong> Der Client darf sich nicht auf die Reihenfolge von Feldern in JSON-Objekten verlassen.</li>
+</ul>
+</li>
+<li>
+<p><strong>Explizite Wahl der MAJOR-Version:</strong> Der Client wählt die MAJOR-Version aktiv über den verwendeten URL-Pfad (z.B. <code>/v1/</code>). Ein Wechsel zu einer neuen MAJOR-Version (z.B. auf <code>/v2/</code>) ist eine bewusste Entwicklungsentscheidung und erfordert eine Code-Anpassung.</p>
+</li>
+</ol>
+<h4 id="deprecation-policy-auerbetriebnahme">Deprecation Policy (Außerbetriebnahme)</h4>
+<p>Wenn eine neue MAJOR-Version (z.B. <code>v2</code>) den Status <code>stable</code> erreicht, wird die vorherige MAJOR-Version (<code>v1</code>) als <code>deprecated</code> (veraltet) markiert.</p>
+<ol>
+<li><strong>Ankündigungsphase:</strong> Die veraltete Version wird im Discovery-Dokument als <code>deprecated</code> gekennzeichnet. Anfragen an diese Version können einen <code>Warning</code>-HTTP-Header zurückgeben, der auf die bevorstehende Abschaltung hinweist.</li>
+<li><strong>Migrationszeitraum:</strong> Es wird einen klar kommunizierten Zeitraum geben, in dem beide MAJOR-Versionen parallel betrieben werden, um Clients eine reibungslose Migration zu ermöglichen. Zusätzlich wird überwacht, welche ZETA Client-Versionen aktiv sind, um die Migration zu unterstützen.</li>
+<li><strong>Abschaltung:</strong> Nach Ablauf des Migrationszeitraums und wenn die Überwachung der ZETA Clients ergeben hat, dass keine veralteten Clients mehr aktiv genutzt werden, wird die veraltete Version abgeschaltet. Anfragen an die Endpunkte dieser Version führen dann zu einem <code>HTTP 410 Gone</code>-Fehler.</li>
+</ol>
+<h2 id="performance-und-lastannahmen">Performance- und Lastannahmen</h2>
+<p>Informationen zu den erwarteten Leistungs- und Lastannahmen für die ZETA API werden nachgereicht.</p>
+<ul>
+<li>SM(C)-B Signaturerstellung</li>
+<li>TPM Attestation</li>
+<li>ZETA Guard Clientregistrierung</li>
+<li>ZETA Guard Authentifizierung</li>
+<li>ZETA Guard Refresh Token Exchange</li>
+<li>ZETA Guard PEP</li>
+</ul>
+<h2 id="rate-limits-und-einschrankungen">Rate Limits und Einschränkungen</h2>
+<p>Der OAuth Protected Resource Well-Known Endpoint ist so konfiguriert, dass er eine Rate-Limiting-Strategie implementiert. Der ZETA Client muss die Rate Limits beachten, um eine Überlastung des Endpunkts zu vermeiden. Die genauen Limits können je nach Implementierung variieren, aber typischerweise gelten folgende Richtlinien:</p>
+<ul>
+<li>X-RateLimit-Limit</li>
+<li>X-RateLimit-Remaining</li>
+<li>X-RateLimit-Reset</li>
+</ul>
+<p>oder:</p>
+<ul>
+<li>RateLimit-Policy</li>
+<li>RateLimit</li>
+</ul>
+<p><strong>Beispiele:</strong> <a href="https://www.ietf.org/archive/id/draft-ietf-httpapi-ratelimit-headers-09.html#name-ratelimit-policy-field">Draft RFC für Rate Limits</a></p>
+<h2 id="support-und-kontaktinformationen">Support und Kontaktinformationen</h2>
+<p>Hilfe: Informationen darüber, wo und wie Benutzer Unterstützung erhalten können (z.B. Forum, E-Mail-Support).
+Fehlerberichterstattung: Wie können Nutzer Bugs melden oder Feature-Anfragen stellen?</p>
 
 
 
