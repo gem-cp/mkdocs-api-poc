@@ -49,7 +49,8 @@ plugins:
           imports: [
             # The format is: "source_path_in_repo -> destination_in_docs_folder"
             docs/*,
-            images/*
+            images/*,
+            README.md
             ]
         # Import documentation from ZETA
         - name: "zeta"
@@ -66,16 +67,17 @@ nav:
     - local API v1: api/v1/index.md # local file
     - Release Notes: release-notes.md # local file
   - VSDM2:
-    - Anwendungsfälle: spec-VSDM2/docs/vsdm_anwendungsfaelle.md # Imported file
-    - Anwendungsszenarien: spec-VSDM2/docs/vsdm_anwendungsszenarien.md # Imported file
-    - Primärsystem Interaktionen: spec-VSDM2/docs/vsdm_psinteraktionen.md # Imported file
-    - Abläufe: spec-VSDM2/docs/vsdm_ablauf_ps.md # Imported file
-    - VSDM FHIR: spec-VSDM2/docs/vsdm_fhir_infos.md # Imported file
-    - VSDM Informationsmodell: spec-VSDM2/docs/vsdm_informationsmodell.md # Imported file
-    - VSDM Kontext PoPP und ZETA: spec-VSDM2/docs/vsdm_kontext_popp_zt.md # Imported file
-    - VSDM Prüfziffer: spec-VSDM2/docs/vsdm_pruefziffer.md # Imported file
-    - Status Codes: spec-VSDM2/docs/vsdm_statuscodes.md # Imported file
-    - Error Codes: spec-VSDM2/docs/vsdm_errorcodes.md # Imported file
+    - VSDM2 Dokumentation: spec-VSDM2/ # Imported file
+    - Anwendungsfälle: spec-VSDM2/docs/vsdm_anwendungsfaelle/ # Imported file
+    - Anwendungsszenarien: spec-VSDM2/docs/vsdm_anwendungsszenarien/ # Imported file
+    - Primärsystem Interaktionen: spec-VSDM2/docs/vsdm_psinteraktionen/ # Imported file
+    - Abläufe: spec-VSDM2/docs/vsdm_ablauf_ps/ # Imported file
+    - VSDM FHIR: spec-VSDM2/docs/vsdm_fhir_infos/ # Imported file
+    - VSDM Informationsmodell: spec-VSDM2/docs/vsdm_informationsmodell/ # Imported file
+    - VSDM Kontext PoPP und ZETA: spec-VSDM2/docs/vsdm_kontext_popp_zt/ # Imported file
+    - VSDM Prüfziffer: spec-VSDM2/docs/vsdm_pruefziffer/ # Imported file
+    - Status Codes: spec-VSDM2/docs/vsdm_statuscodes/ # Imported file
+    - Error Codes: spec-VSDM2/docs/vsdm_errorcodes/ # Imported file
   - ZETA:
     - ZETA Dokumentation: zeta/docs/index.md # Imported file
     - ZETA API v1: zeta/docs/api/v1/index.md # Imported file
