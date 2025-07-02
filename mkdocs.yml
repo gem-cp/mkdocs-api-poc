@@ -50,7 +50,7 @@ plugins:
             # The format is: "source_path_in_repo -> destination_in_docs_folder"
             docs/*, # Imports all files from the docs directory
             images/*, # Imports all files from the images directory
-            README.md -> index.md # Imports README.md and renames it to index.md in the site
+            /README.md -> index.md # Imports root README.md and renames it to index.md in the site
             ]
         # Import documentation from ZETA
         - name: "zeta"
