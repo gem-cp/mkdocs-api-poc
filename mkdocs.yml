@@ -49,8 +49,7 @@ plugins:
           imports: [
             # The format is: "source_path_in_repo -> destination_in_docs_folder"
             docs/*,
-            images/*,
-            README.md
+            images/*
             ]
         # Import documentation from ZETA
         - name: "zeta"
@@ -67,7 +66,6 @@ nav:
     - local API v1: api/v1/index.md # local file
     - Release Notes: release-notes.md # local file
   - VSDM2:
-    - VSDM2 Dokumentation: spec-VSDM2/README.md # Imported file
     - Anwendungsfälle: spec-VSDM2/docs/vsdm_anwendungsfaelle.md # Imported file
     - Anwendungsszenarien: spec-VSDM2/docs/vsdm_anwendungsszenarien.md # Imported file
     - Primärsystem Interaktionen: spec-VSDM2/docs/vsdm_psinteraktionen.md # Imported file
